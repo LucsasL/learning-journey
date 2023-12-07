@@ -1,0 +1,2 @@
+# learning-journey
+ This repository is supposed to show my studies in both Computer Science and Programming and also demonstrate some projects in the area that I'm interested in.  All the courses in this repository are present in the [*EdX site*](https://www.edx.org/), we can find courses about several topics and fields of science, designed to enhance your skills as a experienced professional or introduce new voluteers to start growing their knowledge and opportunities. And since I want to get better in what I do, I craved and attached to the opportunity, and here I am.
