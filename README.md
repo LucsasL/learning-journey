@@ -18,7 +18,7 @@ Course of Computer Science presented by [*Harvard University*](https://www.edx.o
 
 This being the Harvard University's introduction to the intellectual enterprises of **computer science** and the art of programming for majors and non-majors alike, with or without prior programming experience. And as I'm a enthusiast in this subject, I couldn't let that pass, since It's a great opportunity to improve my skill levels and deep understanding of the computers, so I'll be working in some projects from now.
 
-![Image](CS50x Computer Science Course - Harvard University)
+![CS50x Computer Science Course - Harvard University](Images/CS50x Design.png)
 
 ## Contents
 
