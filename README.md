@@ -30,6 +30,10 @@ This is a online course distributed by Harvard University to help beginners and 
 
 - C
 
+   * Exercises
+   
+   * Challenges
+
 - Arrays
 
 - Algorithms
