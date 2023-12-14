@@ -30,29 +30,69 @@ This is a online course distributed by Harvard University to help beginners and 
 
 - C
 
-   * Exercises
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/Week%200%20-%20Scratch/)
    
-   * Challenges
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/Week%200%20-%20Scratch/)
 
 - Arrays
 
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/Week%201%20-%20C/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/Week%201%20-%20C/)
+
 - Algorithms
+
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
 
 - Memory
 
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+
 - Data Structures
+
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
 
 - Python
 
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+
 - SQL
+
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
 
 - HTML, CSS and javaScript
 
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+
 - Flask
+
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
 
 - Emoji
 
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+
 - Cybersecurity
+
+   * [Exercises](CS50x%20-%20Introduction%20to%20Computer%20Science/)
+   
+   * [Challenges](CS50x%20-%20Introduction%20to%20Computer%20Science/)
 
 ## Challenges
 
