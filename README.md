@@ -112,7 +112,7 @@ Using HTML, CSS, Python and JavaScript we will create projects and develop our s
 
    * HTML:
 
-      * [Hello](CS50's Web Programming/Lecture 1/hello.html')
+      * [Hello]("CS50's Web Programming/Lecture 1/hello.html")
 
    * CSS:
 
