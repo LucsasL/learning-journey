@@ -112,11 +112,45 @@ Using HTML, CSS, Python and JavaScript we will create projects and develop our s
 
    * HTML:
 
-      * [Hello](CS50's%20Web%20Programming/Lecture%201/HTML/hello.html)
+      * [Hello.html](CS50's%20Web%20Programming/Lecture%201/HTML/hello.html)
+
+      * [Headings.html](CS50's%20Web%20Programming/Lecture%201/HTML/heading.html)
+
+      * [Lists.html](CS50's%20Web%20Programming/Lecture%201/HTML/lists.html)
+
+      * [Image.html](CS50's%20Web%20Programming/Lecture%201/HTML/image.html)
+
+      * [Links.html](CS50's%20Web%20Programming/Lecture%201/HTML/links.html)
+
+      * [Table.html](CS50's%20Web%20Programming/Lecture%201/HTML/table.html)
+
+      * [Form.html](CS50's%20Web%20Programming/Lecture%201/HTML/form.html)
+
+      * [Style.html](CS50's%20Web%20Programming/Lecture%201/HTML/style.html)
+
+      * [Size.html](CS50's%20Web%20Programming/Lecture%201/HTML/size.html)
+
+      * [Font.html](CS50's%20Web%20Programming/Lecture%201/HTML/font.html)
+
+      * [Descendant.html](CS50's%20Web%20Programming/Lecture%201/HTML/descendant.html)
+
+      * [Attribute.html](CS50's%20Web%20Programming/Lecture%201/HTML/attribute.html)
+
+      * [Hover.html](CS50's%20Web%20Programming/Lecture%201/HTML/hover.html)
+
+      * [Responsive.html](CS50's%20Web%20Programming/Lecture%201/HTML/responsive.html)
+
+      * [flexbox.html](CS50's%20Web%20Programming/Lecture%201/HTML/flexbox.html)
+
+      * [Grid.html](CS50's%20Web%20Programming/Lecture%201/HTML/grid.html)
+
+      * [Variables.html](CS50's%20Web%20Programming/Lecture%201/HTML/variables.html)
 
    * CSS:
 
-      * 
+      * [Syle.css](CS50's%20Web%20Programming/Lecture%201/CSS/style.css)
+
+      * [Variables.scss](CS50's%20Web%20Programming/Lecture%201/CSS/variables.scss)
 
 - Git:
 
