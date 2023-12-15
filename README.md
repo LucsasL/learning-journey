@@ -108,7 +108,7 @@ Using HTML, CSS, Python and JavaScript we will create projects and develop our s
 
 ## In this course, the following topics will be discussed:
 
-- HTML, CSS
+- HTML, CSS:
 
    * HTML:
 
@@ -118,18 +118,18 @@ Using HTML, CSS, Python and JavaScript we will create projects and develop our s
 
       * 
 
-- Git
+- Git:
 
-- Python
+- Python:
 
-- Django
+- Django:
 
-- SQL, Models, and Migrations
+- SQL, Models, and Migrations:
 
-- JavaScript
+- JavaScript:
 
-- User Interfaces
+- User Interfaces:
 
-- Testing, CI/CD
+- Testing, CI/CD:
 
-- Scalability and Security
+- Scalability and Security:
