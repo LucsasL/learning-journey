@@ -100,4 +100,36 @@ This is a online course distributed by Harvard University to help beginners and 
 
 # CS50's Web Programming
 
-(In development)
+As I was studying the course of Computer Science from CS50 I decided to start studying in other courses as well. And the course based in Web development was interesting to me.
+
+## Contents
+
+Using HTML, CSS, Python and JavaScript we will create projects and develop our skills
+
+## In this course, the following topics will be discussed:
+
+- HTML, CSS
+
+   * HTML:
+
+      * [Hello](CS50's Web Programming/Lecture 1/hello.html')
+
+   * CSS:
+
+      * 
+
+- Git
+
+- Python
+
+- Django
+
+- SQL, Models, and Migrations
+
+- JavaScript
+
+- User Interfaces
+
+- Testing, CI/CD
+
+- Scalability and Security
