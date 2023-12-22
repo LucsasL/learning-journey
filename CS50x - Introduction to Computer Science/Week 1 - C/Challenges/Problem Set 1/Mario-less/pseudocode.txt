@@ -1,0 +1,7 @@
+Declare a variable to store a height;
+Prompt the user for the height of the pyramid;
+Assign the variable with the number;
+If said number isn't between 1 and 8
+    Go back to line 2;
+Iterate through 1 through height:
+    print i hashes then print a newline;
