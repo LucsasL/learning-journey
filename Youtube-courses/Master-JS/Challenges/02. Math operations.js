@@ -5,16 +5,16 @@ let firstFavNum = 5;
 let secondFavNum = 7;
 
 // 3. Add (firstFavNum & secondFavNum).
-firstFavNum += secondFavNum;
+console.log(firstFavNum + secondFavNum);
 
 // 4. Subtract (firstFavNum & secondFavNum).
-firstFavNum -= secondFavNum;
+console.log(firstFavNum - secondFavNum);
 
 // 5. Multiply(firstFavNum & secondFavNum).
-firstFavNum *= secondFavNum;
+console.log(firstFavNum * secondFavNum);
 
 // 6. Divided (firstFavNum & secondFavNum).
-firstFavNum /= secondFavNum;9
+console.log(firstFavNum / secondFavNum);
 
 // 3. Check (firstFavNum Mod secondFavNum).
 console.log(firstFavNum % secondFavNum);
