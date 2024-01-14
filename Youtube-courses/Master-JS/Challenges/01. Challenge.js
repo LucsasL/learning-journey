@@ -11,4 +11,7 @@ let gender = "Male";
 let twitterHandle = "@LucsasL";
 
 // 5. Finally log all variables to the console.
-console.log(`${name}, ${whatDoYouWannabecomeInYourLife}, ${gender}, ${twitterHandle}`);
+console.log(name);
+console.log(whatDoYouWannabecomeInYourLife);
+console.log(gender);
+console.log(twitterHandle);
