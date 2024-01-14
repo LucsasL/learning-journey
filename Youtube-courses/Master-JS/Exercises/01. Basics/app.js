@@ -38,7 +38,6 @@ console.log(counter);
 let number = 10;
 
 // falsy
-
 /*
     → false
     → null
@@ -51,3 +50,23 @@ let number = 10;
 
 let notDefined;
 console.log(notDefined);
+
+/*
+ Comparison Operators
+ → Relational Operators
+    → > Greater than
+    → < Less than
+    → >= Greater than or equal to
+    → <= Less than or equal to
+
+ → Equality Operators
+    → == Equal to
+    → === strict equality (type + value)
+    → != Different from
+*/
+
+// Relational Operators
+// console.log(10 > 10); false
+// console.log(10 < 10); false
+// console.log(10 >= 10); true
+// console.log(10 <= 10); true
