@@ -68,6 +68,7 @@ console.log(notDefined);
 */
 
 console.log(10 === 10);
+console.log(10 !== '10')
 
 // Relational Operators
 // console.log(10 > 10); false
