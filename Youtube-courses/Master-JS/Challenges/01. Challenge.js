@@ -8,7 +8,7 @@ let whatDoYouWannabecomeInYourLife = "Programmer";
 let gender = "Male";
 
 // 4. Create variable name (twitterHandle) & and store your twitter handle.
-let twitterHandle = "https://twitter.com/LucsasL";
+let twitterHandle = "@LucsasL";
 
 // 5. Finally log all variables to the console.
 console.log(`${name}, ${whatDoYouWannabecomeInYourLife}, ${gender}, ${twitterHandle}`);
