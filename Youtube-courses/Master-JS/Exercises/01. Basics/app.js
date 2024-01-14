@@ -62,8 +62,12 @@ console.log(notDefined);
  → Equality Operators
     → == Equal to
     → === strict equality (type + value)
-    → != Different from
+    → != strict non-equality operator (type + value)
+    → == loose equality operator (value)
+    → != not equality operator ()
 */
+
+console.log(10 === 10);
 
 // Relational Operators
 // console.log(10 > 10); false

@@ -103,6 +103,7 @@ This is a online course distributed by Harvard University to help beginners and 
 As I was studying the course of Computer Science from CS50 I decided to start studying in other courses as well. And the course based in Web development was interesting to me.
 
 ![CS50 Web Programming - Harvard University](images/cs50-web-design.png)
+(This design is scary, I know, but I'll make it better, just lazy you know...)
 
 ## Contents
 
