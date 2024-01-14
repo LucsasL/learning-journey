@@ -108,3 +108,12 @@ console.log(firstName.includes('X'));
 
 // 9. Placeholders
 console.log(`${firstName} ${secondName}`);
+
+let desc = `This is some random 
+    Text
+    1
+    2
+    
+    `;
+
+console.log(desc);
