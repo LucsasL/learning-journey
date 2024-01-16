@@ -139,3 +139,10 @@ while (i <= 5) {
     console.log("Hello world ", i);
     i++;
 }
+
+// Do {...} while (condition)
+let j = 0;
+
+do {
+    console.log(`Hello, world! ${i}`)
+} while (j <= 5);
