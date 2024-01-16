@@ -205,3 +205,7 @@ console.log(stringArr[3]);
 const nestArr = ["One", ["Two", "Three"], 1, true, false];
 
 console.log(nestArr[1][1]);
+
+const myLetter = ['H', 'e', 'l', 'l', 'o'];
+
+console.log(myLetter);
