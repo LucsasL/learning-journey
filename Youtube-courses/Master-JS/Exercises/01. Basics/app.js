@@ -1,24 +1,3 @@
-// Variables: (reserved keyword) (variable name) (value)
-let name = "Lucsas";
-console.log(name);
-
-// Primitive types
-
-// 1. Number
-let num = 10.01;
-
-// Basic math
-// console.log(2 + 2);
-// console.log(2 - 2);
-// console.log(2 * 2);
-// console.log(2 / 2);
-// console.log(2 % 2);
-// console.log(2 ** 2);
-
-let counter = 0;
-counter++;
-console.log(counter);
-
 // Boolean → true || false
 let number = 10;
 
