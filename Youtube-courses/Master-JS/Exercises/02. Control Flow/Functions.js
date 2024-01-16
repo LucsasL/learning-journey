@@ -62,3 +62,16 @@ function showCallFunc(fn) {
 showCallFunc(function(value) {
   console.log(value);
 })
+
+function greet2(name, cb) {
+  console.log(`Hello ${name}`);
+
+  cb();
+}
+
+function cb() {
+  console.log(`I am callback function`);
+
+}
+
+greet2("Lucsas", cb);
