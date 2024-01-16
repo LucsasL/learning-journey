@@ -38,3 +38,27 @@ const res3 = add(50, 40);
 console.log(res1);
 console.log(res2);
 console.log(res3);
+
+// Function Declaration
+function sayHello(username = "Lucsas") {
+  console.log(`Hello, ${username}!`);
+}
+
+// Function Expression
+const greetings = function (user) {
+  console.log(`Hello ${user}`);
+  
+}
+
+greetings("John");
+
+// When we provide as an (argument) to other function that function is know as callback function
+function showCallFunc(fn) {
+  const value = 10;
+
+  fn(value);
+}
+
+showCallFunc(function(value) {
+  console.log(value);
+})
