@@ -15,3 +15,9 @@ function passwordChecker(ps) {
 
 const res = passwordChecker(password);
 console.log(res);
+
+const age = 25;
+
+// Boolean Expression ? valueIfTrue : valueIfFalse;
+const isAdult = age >= 18 ? true : false;
+console.log(isAdult);
