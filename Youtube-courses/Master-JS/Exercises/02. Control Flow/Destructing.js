@@ -34,5 +34,5 @@ console.log(e);
 console.log(h);
 
 // Assigning the rest of an array to a variable
-const [a, ...b] = ["One", "Two", "Three", "Four", true, 12, ["One2"]];
+const [i, ...j] = ["One", "Two", "Three", "Four", true, 12, ["One2"]];
 console.log(b);
