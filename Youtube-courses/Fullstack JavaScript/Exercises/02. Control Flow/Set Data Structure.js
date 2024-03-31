@@ -9,7 +9,7 @@ mySet.add("Banana");
 mySet.add("Orange");
 mySet.add("Apple");
 
-// Set() Methods
+// ---------- Set() Methods ----------
 // console.log(mySet);
 // console.log(mySet.has("Banana"));
 // mySet.delete("Banana");
