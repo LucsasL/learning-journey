@@ -3,19 +3,19 @@
 const input = document.querySelector("input");
 
 // Key pressed Event
-// input.addEventListener("keypress", () => {
-//   console.log("Key pressed");
-// });
+input.addEventListener("keypress", () => {
+  console.log("Key pressed");
+});
 
 // // Keyup Event
-// input.addEventListener("keyup", () => {
-//   console.log("Keyup");
-// });
+input.addEventListener("keyup", () => {
+  console.log("Keyup");
+});
 
 // // Keydown Event
-// input.addEventListener("keydown", () => {
-//   console.log("Keydown");
-// });
+input.addEventListener("keydown", () => {
+  console.log("Keydown");
+});
 
 // Useful Properties and methods
 input.addEventListener("keypress", e => {
