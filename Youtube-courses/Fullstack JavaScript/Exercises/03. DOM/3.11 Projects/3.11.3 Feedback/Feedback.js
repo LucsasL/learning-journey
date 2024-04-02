@@ -8,9 +8,15 @@ let selectRating = "Satisfied";
 
 ratingsContainer.addEventListener("click", (e) => {
   if (e.target.parentNode.classList.contains("rating")) {
+    let activeDivs = document.querySelectorAll(".active");
     removeActive();
+
     e.target.parentNode.classList.toggle("active");
     selectRating = e.target.nextElementSibling.innerHTML;
+
+    if (activeDivs.length > 0) {
+      activeDivs.forEach(item => item.classList.remove("active"));
+    }
   }
 });
 
