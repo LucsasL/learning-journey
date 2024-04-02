@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document - Fullstack JavaScript Mastery</title>
+    <title>Simple Calculator - Fullstack JavaScript Mastery</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolores ullam quis nobis repudiandae officia modi in, sint soluta assumenda cumque quod impedit minima eum laborum voluptas necessitatibus vero ut?
-    </p>
 
-    <script src="app.js"></script>
+    <div class="main">
+      <div class="inputs">
+        <h1 class="result">Result</h1>
+
+        <select id="selectOp">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+        </select>
+
+        <input class="num1" type="number" placeholder="Number 1" />
+        <input class="num2" type="number" placeholder="Number 2" />
+      </div>
+
+
+      <div class="submitBtn">
+        <button id="btn">Submit</button>
+      </div>
+    </div>
+
+    <script src="Calculator.js"></script>
   </body>
 </html>
