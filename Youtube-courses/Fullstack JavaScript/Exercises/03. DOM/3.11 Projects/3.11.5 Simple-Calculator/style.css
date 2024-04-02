@@ -48,7 +48,21 @@ body {
 
   width: 100%;
   padding: 20px;
+  margin-bottom: 25px;
   border: none;
   border-radius: 10px;
   outline: none;
+
+  cursor: pointer;
+
+  transition: background .2s ease-in;
+}
+
+#btn:hover {
+  background: rgb(1, 1, 175);
+}
+
+.big {
+  font-size: 2.5em;
+  font-weight: bold;
 }
