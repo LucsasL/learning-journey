@@ -7,4 +7,4 @@ document.addEventListener("click", e => {
       body.style.background = buttons[i].value;
     }
   }
-})
+});

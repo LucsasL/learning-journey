@@ -3,15 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document - Fullstack JavaScript Mastery</title>
+    <title>Feedback - Fullstack JavaScript Mastery</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolores ullam quis nobis repudiandae officia modi in, sint soluta assumenda cumque quod impedit minima eum laborum voluptas necessitatibus vero ut?
-    </p>
+  <body class="center">
+    <section class="panel-container" id="panel">
+      <strong>Your Feedback 👀</strong>
+      <div class="ratings-container">
+        <div class="container">
+          <div class="rating">
+            <div class="icon">🤠</div>
+            <small>Unhappy</small>
+          </div>
 
-    <script src="app.js"></script>
+          <div class="rating">
+              <div class="icon">😑</div>
+              <small>Neutral</small>
+          </div>
+
+          <div class="rating">
+            <div class="icon">😀</div>
+            <small>Satisfied</small>
+          </div>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Feedback</button>
+    </section>
+
+    <script src="Feedback.js"></script>
   </body>
 </html>
