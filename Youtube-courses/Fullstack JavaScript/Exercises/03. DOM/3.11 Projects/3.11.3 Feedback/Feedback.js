@@ -18,7 +18,7 @@ sendButt.addEventListener("click", () => {
   panel.innerHTML = `
     <p class="heart">💖</p>
     <strong>Thank You!</strong> <br />
-    <strong> Feedback? ${selectRating} </strong>
+    <p> Feedback? ${selectRating} </p>
   `;
 });
 
