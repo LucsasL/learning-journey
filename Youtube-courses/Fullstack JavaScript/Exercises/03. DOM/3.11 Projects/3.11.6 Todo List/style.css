@@ -52,5 +52,5 @@ ul {
 }
 
 .delete {
-  display: none;
+  display: block;
 }
