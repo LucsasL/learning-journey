@@ -57,7 +57,12 @@ body {
   transition-duration: 0.2s;
 }
 
-.rating:hover {
+.rating:hover,
+.rating:active {
+  background: rgba(255, 255, 255, 0.437);
+}
+
+.active {
   background: rgba(255, 255, 255, 0.437);
 }
 
@@ -72,6 +77,10 @@ body {
   margin-bottom: 10px;
 }
 
+.heart {
+  font-size: 5em;
+}
+
 .btn {
   background: rgb(159, 159, 255);
 
@@ -79,16 +88,21 @@ body {
   padding: 15px;
   border: 2px solid black;
   border-radius: 5px;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .8);
 
   cursor: pointer;
-  transition-property: background, border;
+  transition-property: background, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
 
 .btn:hover {
   background: rgb(137, 137, 255);
-  border: 2px solid blue;
+  box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, .8);
+}
+
+.btn:active {
+  transform: scale(.97);
 }
 
 strong {
