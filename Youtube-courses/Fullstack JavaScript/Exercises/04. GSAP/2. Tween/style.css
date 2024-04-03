@@ -22,4 +22,10 @@ html, body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
+
+  transition: .5s ease;
+}
+
+.move {
+  transform: translateX(150px);
 }
