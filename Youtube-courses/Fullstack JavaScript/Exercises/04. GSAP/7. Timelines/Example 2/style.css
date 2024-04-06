@@ -19,3 +19,38 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  text-align: center;
+}
+
+.box-container {
+  font-size: 1.5em;
+  margin: 20px 0px;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border-radius: 50%;
+}
+
+.box1 {
+  background: blue;
+  box-shadow: 0px 0px 35px blue;
+}
+
+.box2 {
+  background: red;
+  box-shadow: 0px 0px 35px red;
+}
+
+.box3 {
+  background: #8000ff;
+  box-shadow: 0px 0px 35px #8000ff;
+}
