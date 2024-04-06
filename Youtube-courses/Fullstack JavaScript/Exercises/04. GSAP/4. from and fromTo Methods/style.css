@@ -19,3 +19,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: #8000ff;
+  box-shadow: 0px 0px 25px #8000ff;
+
+  width: 75px;
+  height: 75px;
+  margin: 20px;
+  border-radius: 50%;
+
+  transition: .5s ease;
+}
