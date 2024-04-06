@@ -19,3 +19,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  height: 35%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-container {
+  background: blue;
+  box-shadow: 0px 0px 35px blue;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: rgb(163, 163, 255);
+
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  transition-property: background, transform;
+  transition-duration: .5s;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(88, 88, 255);
+}
+
+button:active {
+  transform: scale(.97);
+}
