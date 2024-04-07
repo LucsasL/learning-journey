@@ -28,7 +28,7 @@ body {
 .sidebar {
   background: #ff7c7c;
 
-  width: 400px;
+  width: 20%;
   height: 100vh;
 
   transition-property: transform;
@@ -61,7 +61,6 @@ nav {
 
 .content {
   transform: rotate(-90deg);
-
 }
 
 .main-title {
