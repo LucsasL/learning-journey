@@ -10,8 +10,8 @@
 
 html,
 body {
-  background: #060606;
-  color: white;
+  background: white;
+  color: #060606;
 
   width: 100vw;
   max-width: 100%;
@@ -19,9 +19,23 @@ body {
 
   overflow-x: clip;
 
+  font-size: 1.1em;
+  line-height: 1.6em;
   font-family: 'Roboto', sans-serif;
+}
 
-  text-align: center;
+/* Sidebar Settings */
+.sidebar {
+  background: #ff7c7c;
+
+  width: 400px;
+  height: 100vh;
+
+  transition-property: transform;
+  transition-duration: .7s;
+
+  position: fixed;
+  top: 0;
 }
 
 /* Main Settings */
@@ -37,10 +51,37 @@ nav {
   z-index: 5;
 }
 
+.content-container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  transform: rotate(-90deg);
+
+}
+
+.main-title {
+  margin: 15px 0px;
+  font-family: 'Kumar One Outline', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+.main-info {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+}
+
 .main-img {
-  width: 50%;
+  width: 40%;
   margin: 10px 20px;
   border-radius: 15px;
+  z-index: 1;
 }
 
 li {
@@ -52,6 +93,11 @@ li {
   text-transform: uppercase;
 }
 
-li a {
+a {
+  color: #060606;
   text-decoration: none;
+}
+
+a:hover {
+  color: blue;
 }
