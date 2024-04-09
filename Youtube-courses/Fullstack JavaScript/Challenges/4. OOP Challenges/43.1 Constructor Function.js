@@ -25,7 +25,7 @@ function Car(make, model, year, color) {
 }
 
 // -> Create two car instances (car1 and car2) using the Car constructor with different properties.
-const car1 = new Car("Toyota", "Camry", 2024, "Gray");
+const car1 = new Car("Toyota", "Camry", 2024, "Silver");
 const car2 = new Car("Honda", "CR-V", 2020, "Red");
 
 // -> Test the methods by calling car1.start() and car2.stop(). Observe the output and make sure the messages display the correct make and model of the cars.
