@@ -5,10 +5,11 @@ class Hero {
     this.name = name;
     this.level = level;
 
-    this.greet = function () {
-      return `Hello, ${this.name}, level: ${this.level}.`;
-    }
   };
+  
+  greet() {
+    return `Hello, ${this.name}, level: ${this.level}.`;
+  }
 }
 
 // 3. Create Instance of "hero" class
