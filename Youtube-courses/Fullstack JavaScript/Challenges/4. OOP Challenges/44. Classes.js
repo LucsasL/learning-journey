@@ -4,9 +4,8 @@ class Hero {
   constructor(name, level) {
     this.name = name;
     this.level = level;
-
   };
-  
+
   greet() {
     return `Hello, ${this.name}, level: ${this.level}.`;
   }
@@ -14,9 +13,10 @@ class Hero {
 
 // 3. Create Instance of "hero" class
 const saitama = new Hero("Saitama", "?");
+console.log(saitama.greet());
 
-// 4. Create New class name "Mega", inherit properties from "hero" class & provide property of spell
-class Mega extends Hero {
+// 4. Create New class name "Mage", inherit properties from "hero" class & provide property of spell
+class Mage extends Hero {
   constructor(name, level, spell) {
     super(name, level);
     this.name = name;
@@ -26,5 +26,5 @@ class Mega extends Hero {
 }
 
 // 5. Create instance of "Mega class"
-const batman = new Mega("Bruce Wayne", 500);
-console.log(batman.greet());
+const asriel = new Mage("Asriel", 500, "Fireball");
+console.log(asriel.greet());
