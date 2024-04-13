@@ -21,9 +21,16 @@ function getUserHobbies(name) {
   });
 }
 
-getUserDataFromDB("Irineu").then((name) => {
-  console.log(name);
-  getUserHobbies(name).then((hobby) => console.log(hobby));
-});
+async function showcaseUserHobbies() {
+  try {
+    const name = await getUserDataFromDB("Irineu");
+    const hobbies = await getUserHobbies(name);
+
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 console.log("End");
+
+showcaseUserHobbies();
