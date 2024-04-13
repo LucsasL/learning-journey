@@ -7,12 +7,20 @@ Ever since I've started developing my first websites I was curious to understand
 
 ## Content
 
-The course will offer knowledge in all different technologies involving Front-End and Back-End, starting with the classic ***HTML and CSS*** and go on with JavaScript, bounding concepts such as interfaces, frameworks, library and databases fro web development.
+The course will offer knowledge in all different technologies involving Front-End and Back-End, starting with the classic ***HTML and CSS*** and go on with JavaScript, bounding concepts such as interfaces, frameworks, library and databases for web development.
 
 ## In this course, the following topics will come out:
 
-- HTML and CSS
+- A little bit of **HTML** and **CSS;**
 
-- JavaScript
+- JavaScript / ECMAScript 6;
+
+- Document Object Model `(DOM);`
+
+- Green Socks Application `(GSAP);`
+
+- Object Oriented Programming `(OOP);`
+
+- Synchronous and Asynchronous Programming `(Sync and Async)`
 
 `(Work In Progress)`
