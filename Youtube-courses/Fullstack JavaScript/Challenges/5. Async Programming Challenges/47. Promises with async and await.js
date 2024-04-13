@@ -25,6 +25,7 @@ async function showcaseUserHobbies() {
   try {
     const name = await getUserDataFromDB("Irineu");
     const hobbies = await getUserHobbies(name);
+    console.log(hobbies);
 
   } catch (error) {
     console.log(error);
