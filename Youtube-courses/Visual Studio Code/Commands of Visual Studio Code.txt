@@ -1,0 +1,8 @@
+1. ctrl + n
+2. ctrl + o
+3. ctrl + s
+4. alt + shift + up/down
+5. ctrl + f
+6. ctrl + shift + '
+
+(BRUH)
