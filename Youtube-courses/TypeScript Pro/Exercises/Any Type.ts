@@ -1,0 +1,1 @@
+// TypeScript has a special any type that can be used to represent any type. When a variable is annotated with the any type, TypeScript will allow it to have any type and disable all type checking for that variable and its properties.
