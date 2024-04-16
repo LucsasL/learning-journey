@@ -2,7 +2,7 @@
 
 // function printMessage(message: string) === function printMessage(message: string) : void
 
-function printMessage(message: string) : void {
+function printMessage(message: string): void {
   console.log(`This is my message: ${message}`);
 
   // ERROR

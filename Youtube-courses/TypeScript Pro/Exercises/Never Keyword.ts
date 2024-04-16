@@ -2,13 +2,13 @@
 
 // A function that always throws an error
 
-function throwError(msg: string) : never {
+function throwError(msg: string): never {
   throw new Error(msg);
 }
 
 // A function that has an infinite loop
 
-function infiniteLoop() : never {
+function infiniteLoop(): never {
   while (true) {}
 }
 
@@ -16,7 +16,7 @@ function infiniteLoop() : never {
 
 let x: never;
 
-function neverReturns() : never {
+function neverReturns(): never {
   while (true) {}
 }
 
