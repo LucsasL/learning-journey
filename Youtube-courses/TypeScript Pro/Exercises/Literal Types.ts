@@ -12,7 +12,7 @@ console.log(color);
 let number: 1 | 2 | 3;
 
 number = 1;
-// number = 4; // Invalid
+// number = 4; Invalid
 
 console.log(number);
 
@@ -20,8 +20,11 @@ console.log(number);
 let isTrue: true;
 
 isTrue = true; // Value
-// isTrue = false // Invalid
+// isTrue = false Invalid
 
 console.log(isTrue);
 
 // Practical Example
+let password: "secretPassword" = "secretPassword";
+// password = "Something else"; Invalid
+console.log(password);
