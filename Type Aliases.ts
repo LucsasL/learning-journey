@@ -4,14 +4,15 @@
 
 // type myString = string;
 
-type Person = {
+type User = {
   name: string;
   age: number;
+  location: string;
 }
 
-function printPerson(person: Person) {
-  console.log(`Name: ${person.name}, Age: ${person.age}`);
+function printUserInfo(person: User) {
+  console.log(`Name: ${person.name}, Age: ${person.age}, Location: ${person.location}`);
 }
 
-const myPerson: Person = { name: "Alice", age: 25 };
-printPerson(myPerson);
+const myUser: User = { name: "Alice", age: 25, location: "USA" };
+printUserInfo(myUser);
