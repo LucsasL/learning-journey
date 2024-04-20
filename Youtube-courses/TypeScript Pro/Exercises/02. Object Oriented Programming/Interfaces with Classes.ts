@@ -14,5 +14,5 @@ class Car implements Vehicle {
 }
 
 const car1 = new Car();
-console.log(car1.start());
-console.log(car1.stop());
+car1.start();
+car1.stop();
