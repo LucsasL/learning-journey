@@ -1,4 +1,10 @@
+// In React, you will render lists with some type of loops. The JavaScript map() array method is generally the preferred method.
+
 function App() {
+  // Example #1
+  const number = [1, 2, 3, 4, 5];
+
+  // Example #2
   const userInfo = [
     {
       username: "Irineu",
@@ -20,6 +26,12 @@ function App() {
 
   return (
     <>
+      {number.map((number) => (
+        <ul key={Math.random() * 10}>
+          <li>{number}</li>
+        </ul>
+      ))}
+
       {userInfo.map((user) => (
         <ul key={Math.random() * 10}>
           <li>{user.username}</li>
