@@ -1,14 +1,18 @@
-// import { Component } from "react"
-
-// class App extends Component {
-//   // To show content on the screen
-//   render() {
-//     return <h1>Hello John Doe</h1>
-//   }
-// }
-
 function App() {
-  return <h1>My First Component</h1>;
+  return (
+    <section>
+      <article>
+        <h1 className="mainTitle">Hello, world!</h1>
+        <p>This is some content :D</p>
+        <img src="" alt="Course" />
+
+        <form>
+          <label htmlFor="name">Name:</label> <br />
+          <input id="name" type="text" placeholder="Enter your name"></input>
+        </form>
+      </article>
+    </section>
+  );
 }
 
 export default App;
