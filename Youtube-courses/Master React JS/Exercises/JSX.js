@@ -4,12 +4,17 @@ function App() {
   return (
     <section>
       <article>
-        <h1>Hello, world!</h1>
+        <h1 className="mainTitle">Hello, world!</h1>
         <p>This is some content :D</p>
-        <img src="" alt="Some image" />
+        <img src="" alt="Course" />
 
         <form>
-          <input type="text" placeholder="Enter your name"></input>
+          <label htmlFor="name">Name:</label> <br />
+          <input 
+            id="name" 
+            type="text" 
+            placeholder="Enter your name"
+          />
         </form>
       </article>
     </section>
