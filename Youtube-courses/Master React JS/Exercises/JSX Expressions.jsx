@@ -1,8 +1,10 @@
+// With JSX you can write expressions inside curl braces. The expressions can be a React variable, or property, or any other valid JavaScript expression JSX will execute the expression and return the result.
+
 const name = "Irineu nusabo";
 const multiply = (a, b) => a * b;
 const specialClass = "simple-class";
 
-function App() {
+function Component() {
   return (
     <>
       {/* Rendering Variables Values */}
@@ -17,5 +19,3 @@ function App() {
     </>
   );
 }
-
-export default App;
