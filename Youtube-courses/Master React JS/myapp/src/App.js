@@ -1,23 +1,21 @@
-import User from "./components/User";
+const ValidPassword = () => <h1>Valid Password</h1>;
+const InvalidPassword = () => <h1>Invalid Password</h1>;
+
+const Password = ({ isValid }) => {
+  // if (isValid) {
+  //   return <ValidPassword />;
+  // } else {
+  //   return <InvalidPassword />;
+  // }
+
+  return isValid ? <ValidPassword /> : <InvalidPassword />;
+};
 
 function App() {
   return (
-    <User
-    img="https://avatars.githubusercontent.com/u85052811?v=4"
-    name="Irineu Sabo"
-    age={18}
-    isMarried={false}
-    hobbies={["Coding", "Reading", "Sleeping"]}
-    >
-      <h1>
-        Hello I'm a children
-      </h1>
-
-      <p>
-        Some random text because the lorem and the emmet isn't working.
-      </p>
-
-    </User>
+    <>
+      <Password isValid={true}/>
+    </>
   );
 }
 

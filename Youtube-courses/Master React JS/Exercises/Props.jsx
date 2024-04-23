@@ -24,7 +24,15 @@ function Props() {
       age={18}
       isMarried={false}
       hobbies={["Coding", "Reading", "Sleeping"]}
-    />
+    >
+      <h1>
+        Hello I'm a props children
+      </h1>
+
+      <p>
+        Some random text because the lorem emmet is not working.
+      </p>
+    </User>
   );
 }
 
