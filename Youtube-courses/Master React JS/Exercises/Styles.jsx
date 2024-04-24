@@ -1,3 +1,5 @@
+import "../myapp/src/index.css";
+
 function Style() {
     const headerStyle = {
       background: "#8000ff",
@@ -24,6 +26,9 @@ function Style() {
 
         {/* Variable style */}
         <h2 style={headerStyle}>Something here</h2>
+
+        {/* Exterior Style */}
+        <h3>I'm fine with adding Styles</h3>
       </>
     );
 }
