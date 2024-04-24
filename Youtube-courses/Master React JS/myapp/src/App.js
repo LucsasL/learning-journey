@@ -1,7 +1,11 @@
+const Button = () => {
+  return <button>Click</button>
+}
+
 function App() {
   return (
     <>
-      <h1 className="text-orange-800">Hello, world!</h1>
+  <Button />
     </>
   );
 }
