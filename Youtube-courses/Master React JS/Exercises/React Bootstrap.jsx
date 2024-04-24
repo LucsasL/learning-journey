@@ -52,6 +52,7 @@ function App() {
   return (
     <>
       <NavBarComponent />
+      <Buttons></Buttons>
     </>
   );
 }
