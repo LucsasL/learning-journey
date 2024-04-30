@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+// Variables
+$bg: #060606;
+$primary: #c8deff;
+
+$mainFont: "Roboto", sans-serif;
+
+$bg-img: no-repeat center;
+
+// General Settings
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: $bg;
+
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  overflow-x: clip;
+
+  font-family: $mainFont;
+}
+
+// Text Settings
+p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin: 20px 5px;
+}
+
+// Main Settings
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: $primary;
+
+  max-width: 280px;
+  min-height: 340px;
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 20px;
+
+  position: relative;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 5px solid white;
+
+  position: absolute;
+  top: -12%;
+  right: -30px;
+  z-index: 1;
+}
+
+.img1 {
+  background: url("images/one.jpg") $bg-img;
+  background-size: cover;
+}
+.img2 {
+  background: url("images/two.jpg") $bg-img;
+  background-size: cover;
+}
+.img3 {
+  background: url("images/three.jpg") $bg-img;
+  background-size: cover;
+}
+.img4 {
+  background: url("images/four.jpg") $bg-img;
+  background-size: cover;
+}
