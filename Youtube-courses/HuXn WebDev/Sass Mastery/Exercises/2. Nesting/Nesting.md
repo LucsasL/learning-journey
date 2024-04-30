@@ -1,0 +1,23 @@
+# Nest
+
+### 👇 Sass let you nest CSS selectors in the same way as HTML.
+
+```
+nav {
+  ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: blocks;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
