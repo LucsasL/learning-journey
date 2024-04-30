@@ -1,0 +1,16 @@
+// Variables
+
+// A variable always start with a dollar sign, it doesn't detect spaces
+
+$color: #8000ff;
+$redColor: red;
+
+// To use a variable is necessary that you call it's name using the dollar sign
+body {
+  background: $color;
+}
+
+header {
+  background: $redColor;
+  height: 50vh;
+}
