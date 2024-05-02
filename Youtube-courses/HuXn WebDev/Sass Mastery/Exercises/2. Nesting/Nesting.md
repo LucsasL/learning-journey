@@ -2,7 +2,7 @@
 
 ### 👇 Sass let you nest CSS selectors in the same way as HTML.
 
-```
+```scss
 nav {
   ul {
    margin: 0;

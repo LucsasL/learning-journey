@@ -4,7 +4,7 @@
 
 ### 👇 The @import directive allows you to include the content of one file in another
 
-```
+```scss
 @import "variables";
 @import "colors";
 @import "reset";
