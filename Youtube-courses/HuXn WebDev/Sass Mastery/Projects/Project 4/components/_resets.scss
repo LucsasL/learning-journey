@@ -1,0 +1,32 @@
+// Variables
+$bg: #060606;
+$mainColor: white;
+
+// General Settings
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  background: $bg;
+  color: $mainColor;
+
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  overflow-x: clip;
+
+  scroll-behavior: smooth;
+}
+
+// Elements reset
+ul {
+  li {
+    list-style: none;
+    margin: 10px;
+  }
+}
