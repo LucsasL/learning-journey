@@ -37,6 +37,7 @@ button a {
 
 picture, img {
   width: 100%;
+  height: 100%;
 }
 
 header {
@@ -87,11 +88,11 @@ section#intro {
   text-align: center;
 }
 section#intro div {
-  width: 53%;
+  width: 85%;
 }
 section#intro h1 {
   color: white;
-  font: bold 5.4em serif;
+  font: bold 4em serif;
 }
 
 section#about {
@@ -109,11 +110,11 @@ section#about > div {
   align-items: center;
 }
 section#about > div div {
-  width: 40%;
-  margin: 30px;
+  width: 100%;
+  margin: 10px;
 }
-section#about > div div :nth-child(2) {
-  order: 2;
+section#about > div div img {
+  width: 100%;
 }
 section#about h1 {
   font: bold 4em serif;
@@ -128,32 +129,14 @@ section#gallery h1 {
   margin-bottom: 100px;
 }
 section#gallery .album {
-  height: 600px;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 section#gallery .album picture {
-  width: 300px;
-  position: absolute;
-}
-section#gallery .album picture:nth-child(1) {
-  top: 15%;
-  left: 16%;
-}
-section#gallery .album picture:nth-child(2) {
-  top: 0;
-  left: 40%;
-}
-section#gallery .album picture:nth-child(3) {
-  top: 19%;
-  left: 64%;
-}
-section#gallery .album picture:nth-child(4) {
-  top: 85%;
-  left: 28%;
-}
-section#gallery .album picture:nth-child(5) {
-  top: 85%;
-  left: 52%;
+  width: 400px;
+  margin: 30px;
 }
 
 section#form {
@@ -161,7 +144,8 @@ section#form {
   height: 700px;
 }
 section#form div {
-  width: 500px;
+  width: 100%;
+  margin: 0px 10px;
 }
 section#form input {
   padding: 8px;
@@ -173,4 +157,38 @@ section#form textarea {
   padding: 10px;
   margin: 5px 0px;
   resize: vertical;
+}
+
+@media screen and (min-width: 1200px) {
+  section#intro div {
+    width: 53%;
+  }
+  section#intro h1 {
+    font: bold 5.4em serif;
+  }
+  section#about > div div {
+    width: 40%;
+    margin: 30px;
+  }
+  section#about > div div img {
+    width: 600px;
+  }
+  section#form {
+    width: 100%;
+    height: 700px;
+  }
+  section#form div {
+    width: 500px;
+  }
+  section#form input {
+    padding: 8px;
+    margin: 10px 0px;
+    width: 49.5%;
+  }
+  section#form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    resize: vertical;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,45 @@
+@media screen and (min-width: 1200px) {
+  section#intro {
+    div {
+      width: 53%;
+    }
+
+    h1 {
+      font: bold 5.4em serif;
+    }
+  }
+
+  section#about {
+    > div {
+      div {
+        width: 40%;
+        margin: 30px;
+
+        img {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  section#form {
+    width: 100%;
+    height: 700px;
+
+    div { width: 500px; }
+
+    input {
+      padding: 8px;
+      margin: 10px 0px;
+
+      width: 49.5%;
+    }
+    
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0px;
+      resize: vertical;
+    }
+  }
+}

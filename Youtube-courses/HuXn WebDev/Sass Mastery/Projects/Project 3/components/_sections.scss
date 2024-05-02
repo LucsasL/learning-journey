@@ -31,12 +31,12 @@ section#intro {
   text-align: center;
 
   div {
-    width: 53%;
+    width: 85%;
   }
 
   h1 {
     color: white;
-    font: bold 5.4em serif;
+    font: bold 4em serif;
   }
 }
 
@@ -56,13 +56,12 @@ section#about {
     justify-content: space-around;
     align-items: center;
 
-    
     div {
-      width: 40%;
-      margin: 30px;
+    width: 100%;
+    margin: 10px;
 
-      :nth-child(2) {
-        order: 2;
+      img {
+        width: 100%;
       }
     }
   }
@@ -82,37 +81,14 @@ section#gallery {
   }
   
   .album {
-    height: 600px;
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
     picture {
-      width: 300px;
-      position: absolute;
-    }
-
-    picture:nth-child(1) {
-      top: 15%;
-      left: 16%;
-    }
-
-    picture:nth-child(2) {
-      top: 0;
-      left: 40%;
-    }
-
-    picture:nth-child(3) {
-      top: 19%;
-      left: 64%;
-    }
-
-    picture:nth-child(4) {
-      top: 85%;
-      left: 28%;
-    }
-
-    picture:nth-child(5) {
-      top: 85%;
-      left: 52%;
+      width: 400px;
+      margin: 30px;
     }
   } 
 }
@@ -120,8 +96,11 @@ section#gallery {
 section#form {
   width: 100%;
   height: 700px;
-
-  div { width: 500px; }
+  
+  div {
+    width: 100%; 
+    margin: 0px 10px;
+  }
 
   input {
     padding: 8px;
