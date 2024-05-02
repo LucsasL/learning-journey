@@ -1,0 +1,50 @@
+// Variables
+$mainFont: sans-serif;
+
+// General Settings
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}
+
+html, body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  overflow-x: clip;
+  scroll-behavior: smooth;
+
+}
+
+// Text Elements
+p {
+  font: normal 1.2em $mainFont;
+  margin: 16px 0px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+  }
+}
+
+// Block Elements
+picture, img {
+  width: 100%;
+  // height: 100%;
+}
