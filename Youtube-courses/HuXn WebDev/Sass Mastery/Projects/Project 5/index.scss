@@ -1,2 +1,15 @@
 @import "components/resets";
 @import "components/mixins";
+
+.cards {
+  @include center;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
