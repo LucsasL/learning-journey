@@ -1,0 +1,26 @@
+.btn {
+  // Resets
+  background: transparent;
+  border: none;
+
+  // Styling
+  background: rgb(210, 22, 94);
+  color: white;
+
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  
+  cursor: pointer;
+}
+
+.downloadButton {
+  @extend .btn;
+  background: #000;
+}
+
+.roundButton {
+  @extend .btn;
+  background: skyblue;
+  border-radius: 20px;
+}

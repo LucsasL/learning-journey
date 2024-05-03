@@ -1,1 +1,19 @@
-/*# sourceMappingURL=index.css.map */
+.btn, .roundButton, .downloadButton {
+  background: transparent;
+  border: none;
+  background: rgb(210, 22, 94);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.downloadButton {
+  background: #000;
+}
+
+.roundButton {
+  background: skyblue;
+  border-radius: 20px;
+}/*# sourceMappingURL=index.css.map */
