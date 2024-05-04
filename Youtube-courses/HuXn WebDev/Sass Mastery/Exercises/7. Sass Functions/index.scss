@@ -96,6 +96,7 @@ $initialColor: blue;
   width: 600px;
   height: 100px;
   padding: 20px;
+  margin: 10px;
   border-radius: 20px;
 }
 
@@ -160,7 +161,33 @@ $fontWeights: (
 
   // map-has-key(map, index) Function
   
-  // It checks if a map has an specified index and returns a boolean that shows if there is or not
+  // It checks if a map has an specified index and returns a boolean that shows whether there is or not
   font-weight: map-has-key($fontWeights, "bold"); // true
   font-weight: map-has-key($fontWeights, "mizeravi"); // false
+}
+
+// ----------------------------------------
+
+// Creating Custom Functions
+
+// Example Number 1
+$one: 100px;
+$two: 100px;
+
+@function add($num1, $num2) {
+  @return $num1 + $num2;
+}
+
+.selector {
+  margin: add($one, $two);
+}
+
+// Example Number 2
+@function randomColor() {
+  @return rgb(random(255), random(255), random(255));
+}
+
+.container2 {
+  @extend .container;
+  background: randomColor();
 }

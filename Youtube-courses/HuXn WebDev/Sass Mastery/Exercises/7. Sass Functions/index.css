@@ -1,8 +1,8 @@
 .selector {
   padding: 60px;
   padding: 2px;
-  padding: 0.4352631097;
-  padding: 6;
+  padding: 0.204970481;
+  padding: 9;
   padding: "px";
   padding: false;
 }
@@ -15,10 +15,10 @@
   font-family: 6;
   font-family: 4;
   font-family: "IrinuSeineu";
-  font-family: u96ag4i;
+  font-family: u96agv6;
 }
 
-.container {
+.container, .container2 {
   background: #000099;
   background: #6666ff;
   background: #d500ff;
@@ -27,6 +27,7 @@
   width: 600px;
   height: 100px;
   padding: 20px;
+  margin: 10px;
   border-radius: 20px;
 }
 
@@ -44,4 +45,12 @@
   font-weight: 400, 500, 700;
   font-weight: true;
   font-weight: false;
+}
+
+.selector {
+  margin: 200px;
+}
+
+.container2 {
+  background: rgb(188, 135, 144);
 }/*# sourceMappingURL=index.css.map */
