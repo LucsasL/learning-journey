@@ -99,5 +99,36 @@ $initialColor: blue;
   border-radius: 20px;
 }
 
+// ----------------------------------------
+
 // Sass Lists
 
+$list: 20px 10px 30px;
+
+// List methods
+.selector {
+  // length(list) Method
+
+  // It takes the length of a list; counting all the values inside it
+  padding: length($list);
+
+  // nth(list, indexOfItem) Method
+
+  // It takes a single value of a list based on the index you specify
+  padding: nth($list, 2);
+
+  // set-nth(list, indexOfItem, valueInserted) Method
+
+  // It sets a value in a list based on the index you specify (the index can't surpass the list's limit)
+  padding: set-nth($list, 3, 2em);
+
+  // join(firstList secondList, render) Method
+
+  // It joins two lists together and renders the values together based on a third parameter (with commas, spaces, etc...) 
+  padding: join((10px, 20px, 30px), (40px, 50px, 60px), comma);
+
+  // append(list, value) Method
+  
+  // It adds a value in an additional index at the end of a list
+  padding: append($list, 50px);
+}
