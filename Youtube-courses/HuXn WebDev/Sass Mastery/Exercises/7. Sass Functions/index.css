@@ -1,8 +1,8 @@
 .selector {
   padding: 60px;
   padding: 2px;
-  padding: 0.3548483966;
-  padding: 10;
+  padding: 0.4352631097;
+  padding: 6;
   padding: "px";
   padding: false;
 }
@@ -15,7 +15,7 @@
   font-family: 6;
   font-family: 4;
   font-family: "IrinuSeineu";
-  font-family: u96aezl;
+  font-family: u96ag4i;
 }
 
 .container {
@@ -36,4 +36,12 @@
   padding: 20px 10px 2em;
   padding: 10px, 20px, 30px, 40px, 50px, 60px;
   padding: 20px 10px 30px 50px;
+}
+
+.selector {
+  font-weight: 500;
+  font-weight: "regular", "medium", "bold";
+  font-weight: 400, 500, 700;
+  font-weight: true;
+  font-weight: false;
 }/*# sourceMappingURL=index.css.map */

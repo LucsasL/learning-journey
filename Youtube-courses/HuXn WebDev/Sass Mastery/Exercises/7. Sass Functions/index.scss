@@ -132,3 +132,35 @@ $list: 20px 10px 30px;
   // It adds a value in an additional index at the end of a list
   padding: append($list, 50px);
 }
+
+// ----------------------------------------
+
+// Sass Maps
+$fontWeights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+.selector {
+  // map-get(map, index) Function
+
+  // It takes a value inside a Map
+  font-weight: map-get($fontWeights, "medium");
+
+  // map-keys(map) Function
+
+  // It takes all the keys of a map
+  font-weight: map-keys($fontWeights);
+
+  // map-values(map) Function
+
+  // It takes all the values of a map
+  font-weight: map-values($fontWeights);
+
+  // map-has-key(map, index) Function
+  
+  // It checks if a map has an specified index and returns a boolean that shows if there is or not
+  font-weight: map-has-key($fontWeights, "bold"); // true
+  font-weight: map-has-key($fontWeights, "mizeravi"); // false
+}
