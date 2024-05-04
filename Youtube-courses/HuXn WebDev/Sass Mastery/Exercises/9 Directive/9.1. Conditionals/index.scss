@@ -1,0 +1,63 @@
+// Conditional
+// if () {
+//   <code>
+// } else if () {
+//   <code>
+// } else {
+//   <code>
+// }
+
+// Simple Conditional
+$value: 5;
+
+p {
+  @if 1 + 1 == 2 {
+    background: teal;
+    font-size: 20px;
+  }
+
+  @if 10 > 3 {
+    background: pink;
+  }
+
+  @if $value < 5 {
+    display: none;
+  }
+}
+
+// Composite Conditional
+$value2: 2;
+
+p {
+  @if $value2 == 1 {
+    color: blue;
+
+  } @else if $value2 > 5 and $value2 < 10 {
+    padding: 10px;
+
+  } @else {
+    margin: 70px;
+  }
+}
+
+// Using with Mixins
+@mixin styles($value) {
+  width: $value + px;
+  height: $value + px;
+
+  @if $value > 0 and $value <= 20 {
+    color: orange;
+
+  } @else if $value > 20 and $value <= 50 {
+    color: teal;
+
+  } @else {
+    color: purple;
+  }
+}
+
+.selector {
+  @include styles(125);
+}
+
+// -------------------------------------------

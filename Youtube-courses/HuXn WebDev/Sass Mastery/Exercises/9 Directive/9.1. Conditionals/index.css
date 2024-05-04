@@ -1,1 +1,15 @@
-/*# sourceMappingURL=index.css.map */
+p {
+  background: teal;
+  font-size: 20px;
+  background: pink;
+}
+
+p {
+  margin: 70px;
+}
+
+.selector {
+  width: 125px;
+  height: 125px;
+  color: purple;
+}/*# sourceMappingURL=index.css.map */
