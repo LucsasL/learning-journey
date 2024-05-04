@@ -1,7 +1,7 @@
 .selector {
   padding: 60px;
   padding: 2px;
-  padding: 0.8251965208;
+  padding: 0.2215667564;
   padding: 10;
   padding: "px";
   padding: false;
@@ -15,9 +15,17 @@
   font-family: 6;
   font-family: 4;
   font-family: "IrinuSeineu";
-  font-family: u96abid;
+  font-family: u96ad4s;
 }
 
-.selector {
-  color: blue;
+.container {
+  background: #000099;
+  background: #6666ff;
+  background: #d500ff;
+  background: purple;
+  color: white;
+  width: 600px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */

@@ -68,6 +68,33 @@
 }
 
 // COLOR FUNCTIONS
-.selector {
-  color: blue;
+$initialColor: blue;
+
+.container {
+  // darken() Function
+
+  // It makes the color used as the first parameter darker, using the second parameter as a metric
+  background: darken($initialColor, 20);
+
+  // lighten() Function
+
+  // It makes the color used as the first parameter lighter, using the second parameter as a metric
+  background: lighten($initialColor, 20);
+
+  // adjust-hue() Function
+
+  // It changes the hue of a color based on the number passed as the second parameter
+  background: adjust-hue($initialColor, 50);
+
+  // mix() Function
+
+  // It mixes the colors passed as parameters
+  background: mix($initialColor, red); // Blue + Red == Purple
+
+  color: white;
+
+  width: 600px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
 }
