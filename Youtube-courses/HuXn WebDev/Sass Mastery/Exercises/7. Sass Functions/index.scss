@@ -1,22 +1,22 @@
 // MATH FUNCTIONS
 .selector {
-  // max() Function
+  // max(...numbers) Function
 
   // The max() function takes all the parameters and return the biggest value among them
   padding: max(10px, 50px, 20px, 60px, 2px);
 
-  // min() function
+  // min(...numbers) function
 
   // The min() function takes all the parameters and return the lowest value among them
   padding: min(10px, 50px, 20px, 60px, 2px);
 
-  // random() Function
+  // random(numberLimit) Function
 
   // The random() function returns a random number. If you pass a parameter, it will return a random number within the specified parameter's limit.
   padding: random();
   padding: random(10);
 
-  // unit() and unitless() Functions
+  // unit(numberWithUnit) and unitless(numberWithoutUnit) Functions
 
   // -> The unit() function return the type of unit you're passing as a parameter
   // -> The unitless() function returns a boolean that says whether there is a unit in the passed parameter or not
@@ -26,37 +26,37 @@
 
 // STRING FUNCTIONS
 .selector {
-  // quote() Function
+  // quote(stringWithoutQuotes) Function
 
   // It returns the parameter as a value with quotes ("")
   font-family: quote(arial);
   
-  // unquote() Function
+  // unquote(stringWithQuotes) Function
   
   // It returns the parameter as a value without quotes ("")
   font-family: unquote(arial);
 
-  // to-upper-case() Function
+  // to-upper-case(lowerString) Function
 
   // It converts all the parameter's text to uppercase
   font-family: to-upper-case("Irineu");
 
-  // to-lower-case() Function
+  // to-lower-case(upperString) Function
 
   // It converts all the parameter's text to lowercase
   font-family: to-lower-case("IRINEU");
 
-  // str-length() Function
+  // str-length(string) Function
 
   // It returns the length of a string parameter
   font-family: str-length("Irineu");
 
-  // str-index() Function
+  // str-index(string, char) Function
   
   // It returns the index of the value passed as the second parameter in the first parameter's string
   font-family: str-index("Irineu", "n");
 
-  // str-insert() Function
+  // str-insert(string, insert, index) Function
   
   // It returns a string that is initially passed as the first parameter, but with the insertion of a value from the second parameter at a specified index within the first string.
   font-family: str-insert("Irineu", "nuSei", 4);
@@ -71,22 +71,22 @@
 $initialColor: blue;
 
 .container {
-  // darken() Function
+  // darken(color, rate) Function
 
   // It makes the color used as the first parameter darker, using the second parameter as a metric
   background: darken($initialColor, 20);
 
-  // lighten() Function
+  // lighten(color, rate) Function
 
   // It makes the color used as the first parameter lighter, using the second parameter as a metric
   background: lighten($initialColor, 20);
 
-  // adjust-hue() Function
+  // adjust-hue(color, rate) Function
 
   // It changes the hue of a color based on the number passed as the second parameter
   background: adjust-hue($initialColor, 50);
 
-  // mix() Function
+  // mix(color1, color2) Function
 
   // It mixes the colors passed as parameters
   background: mix($initialColor, red); // Blue + Red == Purple
@@ -98,3 +98,6 @@ $initialColor: blue;
   padding: 20px;
   border-radius: 20px;
 }
+
+// Sass Lists
+
