@@ -1,0 +1,73 @@
+// MATH FUNCTIONS
+.selector {
+  // max() Function
+
+  // The max() function takes all the parameters and return the biggest value among them
+  padding: max(10px, 50px, 20px, 60px, 2px);
+
+  // min() function
+
+  // The min() function takes all the parameters and return the lowest value among them
+  padding: min(10px, 50px, 20px, 60px, 2px);
+
+  // random() Function
+
+  // The random() function returns a random number. If you pass a parameter, it will return a random number within the specified parameter's limit.
+  padding: random();
+  padding: random(10);
+
+  // unit() and unitless() Functions
+
+  // -> The unit() function return the type of unit you're passing as a parameter
+  // -> The unitless() function returns a boolean that says whether there is a unit in the passed parameter or not
+  padding: unit(10px);
+  padding: unitless(10px);
+}
+
+// STRING FUNCTIONS
+.selector {
+  // quote() Function
+
+  // It returns the parameter as a value with quotes ("")
+  font-family: quote(arial);
+  
+  // unquote() Function
+  
+  // It returns the parameter as a value without quotes ("")
+  font-family: unquote(arial);
+
+  // to-upper-case() Function
+
+  // It converts all the parameter's text to uppercase
+  font-family: to-upper-case("Irineu");
+
+  // to-lower-case() Function
+
+  // It converts all the parameter's text to lowercase
+  font-family: to-lower-case("IRINEU");
+
+  // str-length() Function
+
+  // It returns the length of a string parameter
+  font-family: str-length("Irineu");
+
+  // str-index() Function
+  
+  // It returns the index of the value passed as the second parameter in the first parameter's string
+  font-family: str-index("Irineu", "n");
+
+  // str-insert() Function
+  
+  // It returns a string that is initially passed as the first parameter, but with the insertion of a value from the second parameter at a specified index within the first string.
+  font-family: str-insert("Irineu", "nuSei", 4);
+  
+  // unique-id() Function
+
+  // It returns a random ID Code
+  font-family: unique-id();
+}
+
+// COLOR FUNCTIONS
+.selector {
+  color: blue;
+}
