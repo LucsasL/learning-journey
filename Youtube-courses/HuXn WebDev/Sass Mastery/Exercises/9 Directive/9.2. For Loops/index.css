@@ -1,1 +1,119 @@
-/*# sourceMappingURL=index.css.map */
+.box-1 {
+  background: rgb(191, 175, 202);
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 1px;
+}
+
+.box-2 {
+  background: rgb(218, 48, 32);
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.box-3 {
+  background: rgb(202, 69, 176);
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  margin: 3px;
+}
+
+.box-4 {
+  background: rgb(250, 226, 254);
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 4px;
+}
+
+.box-5 {
+  background: rgb(175, 78, 175);
+  width: 500px;
+  height: 100px;
+  padding: 25px;
+  margin: 5px;
+}
+
+.box-6 {
+  background: rgb(82, 121, 42);
+  width: 600px;
+  height: 100px;
+  padding: 30px;
+  margin: 6px;
+}
+
+.box-7 {
+  background: rgb(128, 167, 181);
+  width: 700px;
+  height: 100px;
+  padding: 35px;
+  margin: 7px;
+}
+
+.box-8 {
+  background: rgb(228, 6, 60);
+  width: 800px;
+  height: 100px;
+  padding: 40px;
+  margin: 8px;
+}
+
+.box-9 {
+  background: rgb(234, 81, 165);
+  width: 900px;
+  height: 100px;
+  padding: 45px;
+  margin: 9px;
+}
+
+.box-10 {
+  background: rgb(107, 15, 47);
+  width: 1000px;
+  height: 100px;
+  padding: 50px;
+  margin: 10px;
+}
+
+.list-1 {
+  background: #bb1133;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 1px;
+}
+
+.list-2 {
+  background: #9b0e2a;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.list-3 {
+  background: #7a0b21;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  margin: 3px;
+}
+
+.list-4 {
+  background: #590818;
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 4px;
+}
+
+.list-5 {
+  background: #38050f;
+  width: 500px;
+  height: 100px;
+  padding: 25px;
+  margin: 5px;
+}/*# sourceMappingURL=index.css.map */
