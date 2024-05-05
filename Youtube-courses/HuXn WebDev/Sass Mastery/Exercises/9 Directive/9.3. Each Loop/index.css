@@ -1,1 +1,37 @@
-/*# sourceMappingURL=index.css.map */
+.normal {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.emphasis {
+  font-weight: italic;
+  font-size: 20px;
+}
+
+.green {
+  background: green;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.orange {
+  background: orange;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.blue {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.red {
+  background: red;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}/*# sourceMappingURL=index.css.map */

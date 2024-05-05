@@ -1,0 +1,19 @@
+// Simplest example
+$list: ((normal, bold, 10px), (emphasis, italic, 20px));
+$colors: (green, orange, blue, red);
+
+@each $name, $style, $size in $list {
+  .#{$name} {
+    font-weight: $style;
+    font-size: $size;
+  }
+}
+
+@each $color in $colors {
+  .#{$color} {
+    background: $color;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
