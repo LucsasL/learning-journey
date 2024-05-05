@@ -61,3 +61,34 @@ p {
 }
 
 // -------------------------------------------
+// Functions
+
+$one: 100px;
+$two: 4px;
+
+@function math($operator, $numberOne, $numberTwo) {
+  @if $operator == "add" {
+    @return $numberOne + $numberTwo;
+    
+  } @else if $operator == "subtract" {
+    @return $numberOne - $numberTwo;
+    
+  } @else if $operator == "multiply" {
+    @return $numberOne * $numberTwo;
+    
+  } @else if $operator == "divide" {
+    @return $numberOne / $numberTwo;
+    
+  } @else if $operator == "mod" {
+    @return $numberOne % $numberTwo;
+    
+  }
+}
+
+.selector {
+  padding: math("add", 50, 70) + px;
+  padding: math("subtract", 520, 70) + px;
+  padding: math("multiply", 50, 70) + px;
+  padding: math("divide", 150, 70) + px;
+  padding: math("mod", $one, $two);
+}
