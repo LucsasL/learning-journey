@@ -99,6 +99,34 @@ const Movie = () => {
   );
 };
 
+// Movie Array Example
+const Movies = () => {
+  const [movies, setMovies] = useState([
+    { id: 1, title: "Spider-man", ratings: 9 },
+    { id: 2, title: "Superman", ratings: 6 },
+  ]);
+
+  const changeRatings = () => {
+    setMovies(movies.map((m) => (m = { ...m, ratings: 5 })));
+  };
+
+  return (
+    <>
+      {movies.map((m) => {
+        return (
+          <div>
+            <h1>{m.title}</h1>
+
+            <h2>Ratings: {m.ratings}</h2>
+          </div>
+        );
+      })}
+
+      <button onClick={() => changeRatings()}>Change ratings</button>
+    </>
+  );
+};
+
 const App = () => {
   return (
     <>
@@ -106,6 +134,7 @@ const App = () => {
       <Name />
       <Friends />
       <Movie />
+      <Movies />
     </>
   );
 };
