@@ -1,0 +1,55 @@
+// General Settings
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #060606;
+  color: white;
+
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+// Block Elements Resets
+ul {
+  li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+  }
+}
+
+// Text Elements Resets
+h1,
+h2 {
+  font-family: serif;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 16px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section#about span {
+  background: linear-gradient(
+    to right,
+    rgb(255, 111, 202),
+    rgb(90, 214, 214)
+  );
+  padding: 5px;
+  border-radius: 20px;
+}

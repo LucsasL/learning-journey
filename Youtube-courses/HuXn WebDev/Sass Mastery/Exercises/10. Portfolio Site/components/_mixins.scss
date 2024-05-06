@@ -1,0 +1,21 @@
+// Layouts Mixins
+@mixin center {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumns($gap) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: $gap;
+}
+
+// Title Mixins
+@mixin sectTitle {
+  font: bold 4em serif;
+
+  
+}

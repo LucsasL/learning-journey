@@ -1,0 +1,115 @@
+// Imports
+@import "components/resets";
+@import "components/mixins";
+@import "components/mediaQueries";
+
+// Variables
+$imgBg: no-repeat center;
+
+// Header Settings
+header {
+  height: 70px;
+  
+  div {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+header::before {
+  content: '';
+  background: purple;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+}
+
+// Main Settings
+section#intro {
+  @include center;
+  width: 100%;
+
+  div {
+    background: red url("");
+    background-size: cover;
+  
+    width: 70%;
+    height: 500px;
+    margin: 20px;
+    border: 15px solid blue;
+    border-radius: 5px;
+
+    position: relative;
+  }
+
+  h1 {
+    font: bold 7em serif;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+  }
+}
+
+section#about {
+  @include center;
+  height: 800px;
+
+  > div { width: 70%; }
+
+  h1::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    width: 40%;
+    margin: 40px;
+  }
+}
+
+section#clients {
+  padding: 30px;
+
+  .clientGrid {
+    @include flexColumns(20px);
+
+    .client {
+      background: #151515;
+
+      padding: 40px;
+      border-radius: 10px;
+    }
+  }
+
+  picture {
+    background: red;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+// Footer Settings
+footer {
+  @include flexColumns(50px);
+
+  > div {
+    width: 90%;
+    padding: 50px;
+  }
+
+  #navFooter {
+    @include flexColumns(1px);
+  }
+
+  ul li {
+    display: block;
+    margin: 15px 0px;
+  }
+}
