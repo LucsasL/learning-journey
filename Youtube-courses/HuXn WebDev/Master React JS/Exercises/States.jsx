@@ -10,6 +10,7 @@
 
 import { useState } from "react";
 
+// Counter Example
 const Counter = () => {
   const [count, setCount] = useState(0);
 
@@ -25,22 +26,59 @@ const Counter = () => {
   );
 };
 
-// Name Change
+// Username Example
 const Name = () => {
-  
+  const [ username, setUsername ] = useState("Unknown");
+
+  const changeName = (name) => {
+    setUsername(name);
+  }
+
+  return (
+    <>
+      <h1>{username}</h1>
+      <button onClick={() => changeName("Irineu")}>Change Name</button>
+    </>
+  );
 }
 
-// Friends List
-const Friend = () => {
+// Friends List Example
+const Friends = () => {
+  const [friends, setFriends] = useState(["Alex", "John"]);
 
-}
+  const addOne = () => {
+    setFriends([...friends, "Irineu"]);
+  };
+
+  const removeOne = () => {
+    setFriends(friends.filter((f) => f !== "John"));
+  };
+
+  const updateOne = () => {
+    setFriends(friends.map((f) => (f === "Alex" ? "Alex Smith" : f)));
+  };
+
+  return (
+    <>
+      <ul>
+        {friends.map((f) => {
+          return <li key={Math.random()}>{f}</li>;
+        })}
+      </ul>
+
+      <button onClick={() => addOne()}>Add One</button>
+      <button onClick={() => removeOne()}>Remove One</button>
+      <button onClick={() => updateOne()}>Update One</button>
+    </>
+  );
+};
 
 const App = () => {
   return (
     <>
       <Counter />
       <Name />
-      <Friend />
+      <Friends />
     </>
   );
 };
