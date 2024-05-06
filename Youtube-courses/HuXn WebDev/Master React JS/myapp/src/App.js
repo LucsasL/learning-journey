@@ -1,31 +1,26 @@
 import { useState } from "react";
 
-const Counter = () => {
-  const [ friends, setFriends ] = useState(["Alex", "John"]);
+const Movie = () => {
+  const [ movie, setMovie ] = useState({
+    title: "Equalizer 3",
+    ratings: 7,
+  });
 
-  const addOne = () => {
-    setFriends([...friends, "Irineu"]);
-  };
+  const handleClick = () => {
+    // const copyMovie = {
+    //   ...movie,
+    //   ratings: 5
+    // }
 
-  const removeOne = () => {
-    setFriends(friends.filter(f => f !== "John"));
-  };
-
-  const updateOne = () => {
-    setFriends(friends.map(f => f === "Alex" ? "Alex Smith" : f));
-  };
+    setMovie({ ...movie, ratings: 5 });
+  }
 
   return (
     <>
-      <ul>
-        {friends.map(f => {
-          return <li key={Math.random()}>{f}</li>;
-        })}
-      </ul>
+      <h1>{movie.title}</h1>
+      <p>Ratings: {movie.ratings}</p>
 
-      <button onClick={() => addOne()}>Add One</button>
-      <button onClick={() => removeOne()}>Remove One</button>
-      <button onClick={() => updateOne()}>Update One</button>
+      <button onClick={handleClick}>Update Ratings</button>
     </>
   );
 }
@@ -33,7 +28,7 @@ const Counter = () => {
 const App = () => {
   return (
     <>
-      <Counter />
+      <Movie />
     </>
   )
 }
