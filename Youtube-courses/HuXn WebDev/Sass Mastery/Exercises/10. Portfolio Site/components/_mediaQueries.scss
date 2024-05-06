@@ -1,3 +1,18 @@
-@media screen and (min-width: 1200px) {
+@import "mixins";
 
+@media screen and (min-width: 1200px) {
+  section#about {
+    > div {
+      display: flex;
+      flex-flow: column wrap;
+      
+      p {
+        width: 40%;
+      }
+      
+      p:nth-child(2) {
+        align-self: flex-end;
+      }
+    }
+  }
 }

@@ -16,6 +16,12 @@
 // Title Mixins
 @mixin sectTitle {
   font: bold 4em serif;
+  margin: 50px;
+  display: flex;
+  justify-content: flex-end;
 
-  
+  span {
+    background: purple;
+    height: 100%;
+  }
 }
