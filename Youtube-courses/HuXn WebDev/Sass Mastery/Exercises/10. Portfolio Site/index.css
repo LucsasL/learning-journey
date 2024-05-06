@@ -43,23 +43,18 @@ section#about span {
 }
 
 header {
+  width: 100%;
   height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
-header div {
+header #mainHeader {
   width: 98%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-header::before {
-  content: "";
-  background: purple;
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
 }
 
 section#intro {
@@ -68,16 +63,25 @@ section#intro {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 750px;
 }
-section#intro div {
-  background: red url("");
+section#intro #color {
+  background: linear-gradient(to right, purple, rgb(205, 56, 205));
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+}
+section#intro #mainCont {
+  background: url("images/alex.jpg") no-repeat center;
   background-size: cover;
   width: 70%;
-  height: 500px;
+  height: 600px;
   margin: 20px;
   border: 15px solid blue;
   border-radius: 5px;
   position: relative;
+  z-index: 1;
 }
 section#intro h1 {
   font: bold 7em serif;
@@ -106,12 +110,25 @@ section#about p {
   margin: 40px;
 }
 
+section#projects .projGrid {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+section#projects picture, section#projects img {
+  width: 100px;
+  margin: 20px;
+}
+
 section#clients {
   padding: 30px;
 }
 section#clients .clientGrid {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   gap: 20px;
 }
@@ -121,16 +138,20 @@ section#clients .clientGrid .client {
   border-radius: 10px;
 }
 section#clients picture {
-  background: red;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+section#clients picture img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
 footer {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   gap: 50px;
 }
@@ -140,7 +161,7 @@ footer > div {
 }
 footer #navFooter {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   gap: 1px;
 }

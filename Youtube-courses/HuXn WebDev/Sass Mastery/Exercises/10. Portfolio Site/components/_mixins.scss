@@ -8,7 +8,7 @@
 
 @mixin flexColumns($gap) {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   gap: $gap;
 }

@@ -6,11 +6,19 @@
 // Variables
 $imgBg: no-repeat center;
 
+$colorPrim: pink;
+$colorSex: cyan;
+$colorThird: purple;
+
 // Header Settings
 header {
+  width: 100%;
   height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
   
-  div {
+  #mainHeader {
     width: 98%;
     height: 100%;
     display: flex;
@@ -19,32 +27,39 @@ header {
   }
 }
 
-header::before {
-  content: '';
-  background: purple;
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-}
 
 // Main Settings
 section#intro {
   @include center;
   width: 100%;
-
-  div {
-    background: red url("");
-    background-size: cover;
+  height: 750px;
   
+  #color {
+    background: linear-gradient(
+      to right,
+      purple,
+      rgb(205, 56, 205)
+      );
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      top: 0;
+  }
+  
+  #mainCont {
+    background: url("images/alex.jpg") $imgBg;
+    background-size: cover;
+    
     width: 70%;
-    height: 500px;
+    height: 600px;
     margin: 20px;
     border: 15px solid blue;
     border-radius: 5px;
 
     position: relative;
+    z-index: 1; 
   }
+
 
   h1 {
     font: bold 7em serif;
@@ -72,6 +87,20 @@ section#about {
   }
 }
 
+section#projects {
+  .projGrid {
+    @include flexColumns(10px);
+
+    width: 100%;
+    height: 100%;
+  }
+
+  picture, img {
+    width: 100px;
+    margin: 20px;
+  }
+}
+
 section#clients {
   padding: 30px;
 
@@ -87,11 +116,16 @@ section#clients {
   }
 
   picture {
-    background: red;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%
+    }
   }
 }
 
