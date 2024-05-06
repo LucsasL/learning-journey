@@ -13,6 +13,21 @@
   gap: $gap;
 }
 
+@mixin grid($gap) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: $gap;
+  margin: 0px auto;
+}
+
+@mixin mobileGrid($gap) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap;
+  margin: 0px auto;
+}
+
 // Title Mixins
 @mixin sectTitle {
   font: bold 4em serif;
@@ -21,7 +36,7 @@
   justify-content: flex-end;
 
   span {
-    background: purple;
+    background: $labelColor;
     height: 100%;
   }
 }

@@ -31,7 +31,7 @@ ul {
 // Text Elements Resets
 h1,
 h2 {
-  font-family: serif;
+  font-family: "Playfair Display", serif;
 }
 
 p {
@@ -46,11 +46,7 @@ a {
 }
 
 section#about span {
-  background: linear-gradient(
-    to right,
-    rgb(255, 111, 202),
-    rgb(90, 214, 214)
-  );
+  background: $gradient;
   padding: 3px 8px;
   border-radius: 20px;
 }

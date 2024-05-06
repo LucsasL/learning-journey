@@ -1,28 +1,27 @@
 // Imports
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
+@import "components/imports";
+@import "components/variables";
 @import "components/resets";
 @import "components/mixins";
 @import "components/mediaQueries";
 
-// Variables
-$imgBg: no-repeat center;
-
-$colorPrim: pink;
-$colorSex: cyan;
-$colorThird: purple;
-
 // Header Settings
 header {
+  background: linear-gradient(
+    to right,
+    #4f2d62,
+    #ac39ea
+  );
+
   width: 100%;
-  height: 70px;
+  height: 400px;
   position: absolute;
   top: 0;
   z-index: 1;
   
   #mainHeader {
     width: 98%;
-    height: 100%;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -34,36 +33,31 @@ section#intro {
   @include center;
   width: 100%;
   height: 750px;
-  
-  #color {
-    background: linear-gradient(
-      to right,
-      purple,
-      rgb(205, 56, 205)
-      );
-      width: 100%;
-      height: 400px;
-      position: absolute;
-      top: 0;
+
+  > div {
+    @include center;
+    background: $gradient;
+    width: 70%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1;
   }
   
   #mainCont {
     background: url("images/alex.jpg") $imgBg;
     background-size: cover;
     
-    width: 70%;
-    height: 600px;
-    margin: 20px;
-    border: 15px solid blue;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-
+    
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
-
   h1 {
-    font: bold 7em serif;
+    font: bold 5em "Playfair Display", serif;
     position: absolute;
     top: 80%;
     left: 8%;
@@ -90,15 +84,14 @@ section#about {
 
 section#projects {
   .projGrid {
-    @include flexColumns(10px);
-
-    width: 100%;
-    height: 100%;
+    @include grid(20px);
+    width: 90%;
+    height: 90%;
   }
 
   picture, img {
-    width: 100px;
-    margin: 20px;
+    width: 250px;
+    border-radius: 10px
   }
 
   h1 {
@@ -113,7 +106,7 @@ section#clients {
     @include flexColumns(20px);
 
     .client {
-      background: #151515;
+      background: #252525;
 
       padding: 40px;
       border-radius: 10px;
