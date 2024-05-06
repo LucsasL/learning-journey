@@ -25,12 +25,25 @@ const Counter = () => {
   );
 };
 
+// Name Change
+const Name = () => {
+  
+}
+
+// Friends List
+const Friend = () => {
+
+}
+
 const App = () => {
   return (
     <>
       <Counter />
+      <Name />
+      <Friend />
     </>
   );
 };
+
 
 export default App;
