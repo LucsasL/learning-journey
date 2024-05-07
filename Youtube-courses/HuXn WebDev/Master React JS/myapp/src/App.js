@@ -1,17 +1,28 @@
-const Movies = () => {
-
-
-  return (
-    <>
-
-    </>
-  );
-}
+import { useState } from "react"; 
 
 const App = () => {
+  const [username, setUsername] = useState("");
+
+  const handleChange = (e) => {
+    setUsername(e.target.value);
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`You typed: ${username}`);
+    setUsername("");
+  }
+
   return (
     <>
-      <Movies />
+      <h1>
+        Form Demo
+      </h1>
+
+      <form onSubmit={handleSubmit}>
+        <input value={username} onChange={handleChange} type="text" />
+        <input type="submit" value="Submit" />
+      </form>
     </>
   )
 }
