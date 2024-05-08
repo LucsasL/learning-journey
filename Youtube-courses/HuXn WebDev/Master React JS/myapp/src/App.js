@@ -1,33 +1,25 @@
-import { useEffect, useState } from "react"; 
+// 1. Import (createContext)
+import { createContext } from "react";
+import ComponentC from "./components/componentC";
+
+// 2. Create an instance of (createContext)
+export const Data = createContext();
+
+// Context API
+// userContext() Hook
 
 const App = () => {
-  const [data, setData] = useState([]);
-
-  // 1. Render for the (first time)
-  // 2, Anytime we do (side effect)
-  // 3. Dependency List
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
-      const data = await response.json();
-
-      if (data && data.length) setData(data);
-    }
-
-    getData();
-  }, []);
+  const name = "Irineu";
 
   return (
+    // 3. Wrap the createContext Component into the Provider Component
     <>
-      <ul>
-        {data.map((di) => {
-          return <li key={Math.random()}>{di.title}</li>;
-        })}
-      </ul>
+    <Data.Provider value={name}>
+      <ComponentC />
+
+    </Data.Provider>
     </>
-  )
+  );
 }
 
 export default App;
