@@ -16,13 +16,11 @@ const App = () => {
   return (
     // 3. Wrap the createContext Component into the Provider Component
     <>
-    <Data.Provider value={name}>
-      <Data.Provider value={age}>
+      <Data.Provider value={name}>
         <ComponentC />
       </Data.Provider>
-    </Data.Provider>
     </>
   );
-}
+};
 
 export default App;
