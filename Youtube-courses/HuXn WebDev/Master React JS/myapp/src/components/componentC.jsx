@@ -4,15 +4,21 @@ const ComponentC = () => {
   return (
     <>
       <Data.Consumer>
-          
-          return (
-        {(name) => {
-            <Data2.Consumer>
-              <h1>My name is: {name}</h1>;
-
+        {
+          (name) => {
+            return (
+              <Data2.Consumer>
+              {
+                (age) => {
+                  return <h1>
+                    My name is {name} and I'm {age} years old
+                  </h1>;
+                }
+              }
             </Data2.Consumer>
-          )
-        }}
+            );
+          }
+        }
       </Data.Consumer>
     </>
   );

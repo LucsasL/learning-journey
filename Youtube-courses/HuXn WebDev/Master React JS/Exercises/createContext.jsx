@@ -17,7 +17,9 @@ const App = () => {
     // 3. Wrap the createContext Component into the Provider Component
     <>
       <Data.Provider value={name}>
-        <ComponentC />
+        <Data2.Provider value={age}>
+          <ComponentC />
+        </Data2.Provider>
       </Data.Provider>
     </>
   );
