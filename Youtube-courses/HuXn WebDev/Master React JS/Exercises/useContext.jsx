@@ -3,11 +3,6 @@
 // React Context is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
 
 // Main App
-// 1. Import (createContext)
-import { createContext } from "react";
-import ComponentC from "./components/componentC";
-
-// 2. Create an instance of (createContext)
 export const Data = createContext();
 export const Data2 = createContext();
 
