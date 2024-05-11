@@ -1,18 +1,11 @@
-import useFetch from "./Hooks/useFetch";
+import Counter from "./components/Counter";
 
 const App = () => {
-  const [data] = useFetch(
-    "https://jsonplaceholder.typicode.com/todos"
-  );
-
   return (
     <>
-      {data && data.map(item => {
-        return <p key={item.id}>{item.title}</p>;
-      })}
-      <button>Do something</button>
+      <Counter />
     </>
-  );
+  )
 }
 
 export default App;
