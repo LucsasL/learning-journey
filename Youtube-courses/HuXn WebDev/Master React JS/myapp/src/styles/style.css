@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg2: #101010;
+}
+
 html, body {
   background: #060606;
   color: white;
@@ -40,4 +44,29 @@ button {
 
   font: bolder 1em system-ui, sans-serif;
   cursor: pointer;
+}
+
+ul {
+  border: 3px solid rgb(63, 63, 63);
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+li:nth-child(even) {
+  background: var(--bg2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
 }
