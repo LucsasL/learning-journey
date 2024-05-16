@@ -2,8 +2,11 @@
 
 // A store is a central place where the state of our application is stored & it can be created using the configureStore function, and it holds the entire state tree of our application.
 
+// Creating a store
 import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
   reducer: {},
 });
+
+// Using a store
