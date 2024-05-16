@@ -17,7 +17,7 @@ const App = () => {
     <>
       <h1>{state.count}</h1>
       <button onClick={() => dispatch({ type: "Increment" })}>+</button>
-      <button onClick={() => dispatch({ type: "Decrement" })}>_</button>
+      <button onClick={() => dispatch({ type: "Decrement" })}>-</button>
       <button onClick={() => dispatch({ type: "Reset" })}>Reset</button>
     </>
   );
