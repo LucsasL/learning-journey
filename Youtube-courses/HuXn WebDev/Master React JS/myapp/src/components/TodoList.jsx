@@ -1,19 +1,20 @@
-import { useState } from "react";
-
+import { useState, useRef } from "react";
 import "../styles/style.css";
 
 const TodoList = () => {
-  const [list, setList] = useState(["t", "e", "s", "t"]);
+  const [list, setList] = useState([]);
   const [input, setInput] = useState("");
+  const inp = useRef();
 
-  function handleSubmit(newLi) {
-    setList(li => {
+  function handleSubmit() {
+    setList(li => 
       li.concat({
-        text: newLi,
-        id: Math.floor(Math.random()),
-      });
-      setInput("");
-    });
+        text: input,
+        id: 2,
+      })
+    );
+    setInput("");
+    inp.current.focus();
   }
 
   return (
@@ -30,12 +31,13 @@ const TodoList = () => {
         <div>
           <input
             type="text"
-            placeholder="Enter your input"
             value={input}
+            placeholder="Enter your new todo"
             onChange={(e) => setInput(e.target.value)}
+            ref={inp}
           ></input> <br />
-          <button onClick={() => handleSubmit("tet")}>Add a list item</button>
-          {/* <button onClick={() => handleRemove()}>Reset List</button> */}
+
+          <button onClick={() => handleSubmit()}>Add a list item</button>
         </div>
       </section>
     </>
