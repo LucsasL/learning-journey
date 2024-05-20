@@ -11,7 +11,7 @@ const TodoList = () => {
   }
 
   const removeTodo = (id) => {
-    
+    setList((todos) => todos.filter((item) => item.id !== id));
   }
 
   function handleSubmit() {
