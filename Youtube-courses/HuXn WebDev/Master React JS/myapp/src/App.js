@@ -1,9 +1,9 @@
-import TodoList from "./components/TodoList";
+import Main from "./components/Main";
 
 const App = () => {
   return (
     <>
-      <TodoList />
+      <Main />
     </>
   )
 }
