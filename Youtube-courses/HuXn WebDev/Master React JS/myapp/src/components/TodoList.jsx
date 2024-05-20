@@ -5,9 +5,11 @@ const TodoList = () => {
   const [list, setList] = useState([]);
   const [input, setInput] = useState("");
   const inp = useRef();
+  let numId = 0;
 
   const generateId = () => {
-    return Math.floor(Math.random() * 10);
+    numId++;
+    return numId;
   }
 
   const removeTodo = (id) => {
