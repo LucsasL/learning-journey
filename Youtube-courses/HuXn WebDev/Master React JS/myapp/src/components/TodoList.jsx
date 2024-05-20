@@ -6,11 +6,19 @@ const TodoList = () => {
   const [input, setInput] = useState("");
   const inp = useRef();
 
+  const generateId = () => {
+    return Math.floor(Math.random() * 10);
+  }
+
+  const removeTodo = (id) => {
+    
+  }
+
   function handleSubmit() {
     setList(li => 
       li.concat({
         text: input,
-        id: 2,
+        id: generateId(),
       })
     );
     setInput("");
@@ -20,25 +28,35 @@ const TodoList = () => {
   return (
     <>
       <section className="container">
+        <div className="inpCont">
+          <div>
+            <input
+              type="text"
+              value={input}
+              placeholder="Enter your new todo"
+              onChange={(e) => setInput(e.target.value)}
+              ref={inp}
+            ></input> <br />
+            <button onClick={() => handleSubmit()}>Add a list item</button>
+          </div>
+        </div>
+
         <ul>
           {
             list.map(li => {
-              return <li key={li.id}>{li.text}</li>;
+              return (
+                <li key={li.id}>
+                  <span>{li.text}</span>
+                  <button
+                    className="remButt"
+                    onClick={() => removeTodo(li.id)}
+                  >X</button>
+                </li>
+              );
             })
           }
         </ul>
 
-        <div>
-          <input
-            type="text"
-            value={input}
-            placeholder="Enter your new todo"
-            onChange={(e) => setInput(e.target.value)}
-            ref={inp}
-          ></input> <br />
-
-          <button onClick={() => handleSubmit()}>Add a list item</button>
-        </div>
       </section>
     </>
   );
