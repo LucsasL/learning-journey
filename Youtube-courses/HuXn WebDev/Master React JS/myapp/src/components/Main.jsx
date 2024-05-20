@@ -23,7 +23,7 @@ const Main = () => {
         <div className="content">
           <p>{strMeal}</p>
 
-          <p>#{id}</p>
+          <p># {id}</p>
         </div>
       </section>
     );
