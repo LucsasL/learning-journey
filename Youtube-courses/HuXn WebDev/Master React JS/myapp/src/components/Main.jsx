@@ -14,16 +14,16 @@ const Main = () => {
     .catch(err => console.log(err));
   }, []);
 
-  const itemsList = items.map(({ strMeal, strMealThumb, id }) => {
+  const itemsList = items.map(({ strMeal, strMealThumb, idMeal }) => {
     return (
-      <section className="card" key={id}>
+      <section className="card" key={idMeal}>
         <h1>{strMeal}</h1>
         <img src={strMealThumb} alt={strMeal} />
 
         <div className="content">
           <p>{strMeal}</p>
 
-          <p># {id}</p>
+          <p>#{idMeal}</p>
         </div>
       </section>
     );
