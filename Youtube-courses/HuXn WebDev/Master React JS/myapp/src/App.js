@@ -1,9 +1,9 @@
-import Main from "./components/Main";
+import Calculator from "./components/Calculator";
 
 const App = () => {
   return (
     <>
-      <Main />
+      <Calculator />
     </>
   )
 }
