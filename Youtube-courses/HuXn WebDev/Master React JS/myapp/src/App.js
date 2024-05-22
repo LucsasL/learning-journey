@@ -1,9 +1,9 @@
-import Calculator from "./components/Calculator";
+import ToggleColor from "./components/ToggleColor";
 
 const App = () => {
   return (
     <>
-      <Calculator />
+      <ToggleColor />
     </>
   )
 }
