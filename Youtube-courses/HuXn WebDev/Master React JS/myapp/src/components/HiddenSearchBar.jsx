@@ -3,15 +3,11 @@ import { FaSearch } from "react-icons/fa";
 import "../styles/style.css";
 
 const HiddenSearchBar = () => {
-  const [showInput, setShowInput] = useState("");
-  const [bgColor, setBgColor] = useState("black");
+  const [showInput, setShowInput] = useState(false);
+  const [bgColor, setBgColor] = useState("#fafafa");
 
-  function changeHandle(showInput) {
-    setShowInput(showInput);
-  }
-
-  function handleClick(e) {
-    setBgColor("#1a1a1a");
+  const handleClick = e => {
+    setBgColor("#060606");
 
     if (e.target.className === "container") {
       setShowInput(false);
@@ -31,9 +27,7 @@ const HiddenSearchBar = () => {
             showInput ? (
               <input 
                 type="text"
-                value={showInput}
                 placeholder="Search..."
-                onChange={() => changeHandle(showInput)}
               />) : (
               <FaSearch onClick={() => setShowInput(true)}/>
             )
