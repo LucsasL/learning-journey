@@ -29,7 +29,7 @@ const HiddenSearchBar = () => {
                 type="text"
                 placeholder="Search..."
               />) : (
-              <FaSearch onClick={() => setShowInput(true)}/>
+              <FaSearch fill="black" stroke="black" onClick={() => setShowInput(true)}/>
             )
           }
         </form>

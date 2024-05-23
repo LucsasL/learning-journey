@@ -8,7 +8,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 1s ease;
 }
 
 html, body {
@@ -38,6 +37,8 @@ section {
   width: 100%;
   height: 100%;
 
+  transition: all 1s ease;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -53,8 +54,4 @@ input {
   border: 2px solid white;
   outline: none;
   border-radius: 5px;
-}
-
-FaSearch {
-  color: black;
 }

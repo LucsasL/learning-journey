@@ -4,14 +4,14 @@ import "../styles/style.css";
 
 const HiddenSearchBar = () => {
   const [showInput, setShowInput] = useState(false);
-  const [bgColor, setBgColor] = useState("#060606");
+  const [bgColor, setBgColor] = useState("#fafafa");
 
   const handleClick = (e) => {
     setBgColor("#060606");
 
     if (e.target.className === "container") {
       setShowInput(false);
-      setBgColor("#060606");
+      setBgColor("#fff");
     }
   };
 
@@ -26,7 +26,11 @@ const HiddenSearchBar = () => {
           {showInput ? (
             <input type="text" placeholder="Search..." />
           ) : (
-            <FaSearch onClick={() => setShowInput(true)} />
+            <FaSearch
+              fill="black"
+              stroke="black"
+              onClick={() => setShowInput(true)}
+            />
           )}
         </form>
       </section>
