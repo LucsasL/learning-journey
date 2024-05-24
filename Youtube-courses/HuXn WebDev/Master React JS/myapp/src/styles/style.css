@@ -45,33 +45,10 @@ section {
   align-items: center;
 }
 
+div {
+  width: 70%;
+}
+
 p {
   margin: 16px 0px;
-}
-
-input {
-  background: #060606;
-  box-shadow: 2px 2px 2px 1px rgb(35, 35, 35);
-  color: white;
-
-  padding: 8px;
-  border: 2px solid white;
-  outline: none;
-  border-radius: 5px;
-}
-
-button {
-  background: blue;
-
-  min-width: 150px;
-  padding: 15px 10px;
-  margin: 10px;
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: rgb(52, 52, 164);
 }
