@@ -1,27 +1,28 @@
 import { useState } from "react";
 import "../styles/style.css";
 
-const Accordion = ({ quote }) => {
+const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
-
-  function handleClick() {
-    setIsActive(!isActive);
-  }
 
   return (
     <>
-      <section className="container">
-        {isActive ? (
-          <>
-            <p onClick={() => handleClick()}>{quote}</p>
-          </>
-        ) : (
-          <>
-            
-            <p onClick={() => handleClick()}>+</p>
-          </>
-        )}
-      </section>
+      <div 
+        className="cardContainer" 
+        onClick={() => setIsActive(!isActive)}
+      >
+        <div className="header">
+          <h1>
+            {title}
+          </h1>
+          <button>
+            {isActive ? "-" : "+"}
+          </button>
+        </div>
+
+        <div className="content">
+          {isActive && <p className="cardInfo">{content}</p>}
+        </div>
+        </div>
     </>
   );
 }
