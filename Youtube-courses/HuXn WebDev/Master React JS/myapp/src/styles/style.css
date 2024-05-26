@@ -135,11 +135,15 @@ main {
 }
 
 /* Products Grid Settings */
-.grid {
+.products {
   padding: 30px;
+}
 
+.grid {
+  padding: 30px 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .prodCont {

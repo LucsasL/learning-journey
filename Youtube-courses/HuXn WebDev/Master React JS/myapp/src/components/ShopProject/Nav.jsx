@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TiShoppingCart } from "react-icons/ti";
 
 const Nav = () => {
   const [category, setCategory] = useState("All");
@@ -28,7 +29,9 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div className="icon">Logo</div>
+        <div className="icon">
+          <TiShoppingCart />
+        </div>
 
         <div>
           <fieldset>
