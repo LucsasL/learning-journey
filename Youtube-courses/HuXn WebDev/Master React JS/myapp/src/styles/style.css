@@ -148,6 +148,8 @@ main {
   border: none;
   border-radius: 5px;
   outline: none;
+
+  cursor: pointer;
 }
 
 /* Products Grid Settings */
@@ -163,9 +165,21 @@ main {
 }
 
 .prodCont {
-  padding: 20px;
   border: 1px solid white;
   border-radius: 8px;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.prodImg img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.prodInfo {
+  padding: 20px;
 }
 
 /* Footer Settings */

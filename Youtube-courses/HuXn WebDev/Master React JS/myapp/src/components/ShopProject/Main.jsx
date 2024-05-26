@@ -1,10 +1,6 @@
-const Main = () => {
-  async function fetchData() {
-    const res = await fetch("https://jsonplaceholder.com");
-    const data = res.json();
-  }
+import data from "../../db/data";
 
-  // fetchData();
+const Main = () => {
 
   return (
     <>
@@ -37,27 +33,32 @@ const Main = () => {
 
         <div className="grid">
           {
-            <div className="prodCont">
-              <div className="prodImg">
-                <picture>
-                  <img src="" alt="Shoe Product" />
-                </picture>
-              </div>
+            data.map(({ img, title, star, reviews, prevPrice, newPrice }) => {
+              return (
+                <div className="prodCont">
+                  <div className="prodImg">
+                    <picture>
+                      <img src={img} alt={title} />
+                    </picture>
+                  </div>
 
-              <div className="prodInfo">
-                <h3>
-                  Placeholder
-                </h3>
+                  <div className="prodInfo">
+                    <h3>
+                      {title}
+                    </h3>
 
-                <p>
-                  (NaN reviews)
-                </p>
+                    <p>
+                      {star} {reviews}
+                    </p>
 
-                <p>
-                  $null
-                </p>
-              </div>
-            </div>
+                    <p>
+                      <span>{prevPrice}</span> <br />
+                      <span>{newPrice}</span>
+                    </p>
+                  </div>
+                </div>
+              );
+            })
           }
         </div>
       </section>
