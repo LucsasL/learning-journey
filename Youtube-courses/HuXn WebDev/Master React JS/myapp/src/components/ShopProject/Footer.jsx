@@ -1,6 +1,12 @@
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+      <footer>
+        <p>
+          Built by <a href="http://github.com/lucsasl" target="_blank" rel="noopener noreferrer">Lucsas</a>
+        </p>
+      </footer>
+    </>
   )
 }
 
