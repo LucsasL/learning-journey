@@ -80,6 +80,9 @@ header button {
 nav {
   border-right: 1px solid white;
 
+  position: sticky;
+  top: 0;
+  
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -93,6 +96,11 @@ nav > div {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+
+nav div {
+  position: sticky;
+  top: 0;
 }
 
 .icon {
@@ -119,6 +127,14 @@ nav label {
 nav legend {
   font-size: 1.2em;
   margin: 10px 0px;
+}
+
+nav #allColors {
+  background: linear-gradient(
+    to bottom,
+    blue,
+    #8000ff
+  );
 }
 
 /* Main Settings */
