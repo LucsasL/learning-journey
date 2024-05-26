@@ -30,7 +30,7 @@ const Validate = () => {
       setNameErrorColor("red");
     }
 
-    if (errorEmail.includes("@")) {
+    if (email.includes("@") && email !== "") {
       setErrorEmail("");
       setEmailErrorColor("green");
       
