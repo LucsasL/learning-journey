@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TiShoppingCart } from "react-icons/ti";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Nav = () => {
   const [category, setCategory] = useState("All");
@@ -30,7 +30,7 @@ const Nav = () => {
     <>
       <nav>
         <div className="icon">
-          <TiShoppingCart />
+          <AiOutlineShoppingCart className="nav-icons" />
         </div>
 
         <div>

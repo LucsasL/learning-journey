@@ -1,3 +1,6 @@
+import { FiHeart } from "react-icons/fi";
+import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
+
 const Header = () => {
   return (
     <>
@@ -5,12 +8,21 @@ const Header = () => {
         <div>
           <input 
             type="text"
+            className="searchInput"
             placeholder="Enter your search shoes"
           />
 
-          <button>a</button>
-          <button>b</button>
-          <button>c</button>
+          <a href="#">
+            <FiHeart className="nav-icons" />
+          </a>
+
+          <a href="#">
+            <AiOutlineShoppingCart className="nav-icons" />
+          </a>
+
+          <a href="#">
+            <AiOutlineUserAdd className="nav-icons" />
+          </a>
         </div>
       </header>
     </>

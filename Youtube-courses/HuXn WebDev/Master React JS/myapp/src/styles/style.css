@@ -12,8 +12,8 @@
 }
 
 html, body {
-  background: #060606;
-  color: white;
+  background: #fff;
+  color: black;
 
   width: 100%;
   max-width: 100%;
@@ -32,11 +32,14 @@ html, body {
   "nav header"
   "nav main"
   "nav footer";
-  grid-template-columns: 300px ;
-  grid-template-rows: 90px 90% 50px;
+  grid-template-columns: 300px calc(100% - 300px);
+  grid-template-rows: 90px 100% 1fr;
 }
 
 :root {
+  --lightGray: rgb(233, 233, 233);
+  --lightGray2: rgb(213, 213, 213);
+
   --mainFont: "Roboto", sans-serif;
 }
 
@@ -48,27 +51,34 @@ fieldset {
 header {
   width: 100%;
   height: 70px;
-  position: sticky;
-  top: 0;
+  border-bottom: 1px solid var(--lightGray2);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header input {
+  background: var(--lightGray);
+
   width: 600px;
 
-  padding: 10px;
+  padding: 12px 20px;
   border: none;
   border-radius: 20px;
   outline: none;
 }
 
-header button {
-  width: 50px;
-  height: 50px;
-  margin: 0px 10px;
+header a {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
   border: none;
   border-radius: 50%;
   outline: none;
@@ -76,9 +86,25 @@ header button {
   cursor: pointer;
 }
 
+/* Resets */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-icons {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+del {
+  color: red;
+}
+
 /* Nav Settings */
 nav {
-  border-right: 1px solid white;
+  height: 100%;
+  border-right: 1px solid var(--lightGray2);
 
   position: sticky;
   top: 0;
@@ -87,7 +113,8 @@ nav {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
-  grid-row: 1 / span 3;
+
+  grid-row: 1 / span 4;
 }
 
 nav > div {
@@ -98,7 +125,7 @@ nav > div {
   align-items: center;
 }
 
-nav div {
+nav > div {
   position: sticky;
   top: 0;
 }
@@ -109,6 +136,11 @@ nav div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav .nav-icons {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 nav fieldset {
@@ -152,6 +184,19 @@ main {
   cursor: pointer;
 }
 
+.starReview {
+  color: rgb(255, 200, 0);
+}
+
+.currentPrice {
+  color: green;
+  font: bold 1.5em var(--mainFont);
+}
+
+.cents {
+  font-size: 1em;
+}
+
 /* Products Grid Settings */
 .products {
   padding: 30px;
@@ -160,12 +205,13 @@ main {
 .grid {
   padding: 30px 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 30px;
 }
 
 .prodCont {
-  border: 1px solid white;
+  padding: 20px;
+  border: 1px solid var(--lightGray2);
   border-radius: 8px;
 
   display: flex;
@@ -175,11 +221,11 @@ main {
 
 .prodImg img {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .prodInfo {
-  padding: 20px;
+  padding: 5px;
 }
 
 /* Footer Settings */
