@@ -13,17 +13,11 @@ const Header = ({ changeQuery }) => {
             onChange={(e) => changeQuery(e)}
           />
 
-          <a href="#">
-            <FiHeart className="nav-icons" />
-          </a>
+          <FiHeart className="nav-icons" />
 
-          <a href="#">
-            <AiOutlineShoppingCart className="nav-icons" />
-          </a>
+          <AiOutlineShoppingCart className="nav-icons" />
 
-          <a href="#">
-            <AiOutlineUserAdd className="nav-icons" />
-          </a>
+          <AiOutlineUserAdd className="nav-icons" />
         </div>
       </header>
     </>
