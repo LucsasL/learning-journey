@@ -141,10 +141,15 @@ nav fieldset {
 
 nav input {
   margin: 5px 10px;
+  cursor: pointer;
 }
 
 nav label {
   font-size: .9em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 nav legend {

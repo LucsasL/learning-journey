@@ -1,15 +1,16 @@
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({ changeQuery }) => {
   return (
     <>
       <header>
         <div>
-          <input 
+          <input
             type="text"
             className="searchInput"
             placeholder="Enter your search shoes"
+            onChange={(e) => changeQuery(e)}
           />
 
           <a href="#">
@@ -26,7 +27,7 @@ const Header = () => {
         </div>
       </header>
     </>
-  )
+  );
 }
 
 export default Header;

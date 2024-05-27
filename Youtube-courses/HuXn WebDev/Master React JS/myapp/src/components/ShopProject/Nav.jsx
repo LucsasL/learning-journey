@@ -1,30 +1,7 @@
-import { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const Nav = () => {
-  const [category, setCategory] = useState("All");
-  const [price, setPrice] = useState("All");
-  const [color, setColor] = useState("All");
-
-  const changeHandler = (e, fieldset) => {
-    switch (fieldset) {
-      case "shoes":
-        setCategory(e);
-        return;
-
-      case "price":
-        setPrice(e);
-        return;
-
-      case "color":
-        setColor(e);
-        return;
-
-      default:
-        return;
-    }
-
-  }
+const Nav = ({ handleChange }) => {
+  console.log(handleChange);
 
   return (
     <>
@@ -40,8 +17,7 @@ const Nav = () => {
               type="radio"
               name="shoes"
               id="allCategory"
-              onChange={(e) => changeHandler(e, "shoes")}
-              checked
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="allCategory">All</label> <br />
 
@@ -49,7 +25,7 @@ const Nav = () => {
               type="radio"
               name="shoes"
               id="sneakerCategory"
-              onChange={(e) => changeHandler(e, "shoes")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="sneakerCategory">Sneaker</label> <br />
 
@@ -57,21 +33,21 @@ const Nav = () => {
               type="radio"
               name="shoes"
               id="flatsCategory"
-              onChange={(e) => changeHandler(e, "shoes")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="flatsCategory">Flats</label> <br />
             <input
               type="radio"
               name="shoes"
               id="sandalsCategory"
-              onChange={(e) => changeHandler(e, "shoes")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="sandalsCategory">Sandals</label> <br />
             <input
               type="radio"
               name="shoes"
               id="heelsCategory"
-              onChange={(e) => changeHandler(e, "shoes")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="heelsCategory">Heels </label> <br />
           </fieldset>
@@ -83,8 +59,7 @@ const Nav = () => {
               type="radio"
               name="price"
               id="allPrices"
-              onChange={(e) => changeHandler(e, "price")}
-              checked
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="allPrices">All</label> <br />
 
@@ -92,7 +67,7 @@ const Nav = () => {
               type="radio" 
               name="price"
               id="lowPrices"
-              onChange={(e) => changeHandler(e, "price")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="lowPrices">$0 - $50</label> <br />
 
@@ -100,7 +75,7 @@ const Nav = () => {
               type="radio" 
               name="price"
               id="averagePrices"
-              onChange={(e) => changeHandler(e, "price")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="averagePrices">$50 - $100</label> <br />
 
@@ -108,7 +83,7 @@ const Nav = () => {
               type="radio" 
               name="price"
               id="highPrices"
-              onChange={(e) => changeHandler(e, "price")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="highPrice">$100 - $150</label> <br />
 
@@ -116,7 +91,7 @@ const Nav = () => {
               type="radio" 
               name="price"
               id="higherPrice"
-              onChange={(e) => changeHandler(e, "price")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="higherPrices">Over $150</label> <br />
           </fieldset>
@@ -128,8 +103,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="allColors"
-              onChange={(e) => changeHandler(e, "color")}
-              checked 
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="idColors">All</label> <br />
 
@@ -137,7 +111,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="blackColor"
-              onChange={(e) => changeHandler(e, "color")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="blackColor">Black</label> <br />
 
@@ -145,7 +119,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="blueColor"
-              onChange={(e) => changeHandler(e, "color")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="blueColor">Blue</label> <br />
 
@@ -153,7 +127,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="redColor"
-              onChange={(e) => changeHandler(e, "color")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="redColor">Red</label> <br />
 
@@ -161,7 +135,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="greenColor"
-              onChange={(e) => changeHandler(e, "color")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="greenColor">Green</label> <br />
 
@@ -169,7 +143,7 @@ const Nav = () => {
               type="radio" 
               name="color"
               id="whiteColor"
-              onChange={(e) => changeHandler(e, "color")}
+              onChange={(e) => handleChange(e)}
             />
             <label htmlFor="whiteColor">White</label> <br />
           </fieldset>
