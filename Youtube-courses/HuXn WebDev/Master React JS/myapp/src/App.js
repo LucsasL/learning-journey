@@ -27,9 +27,9 @@ const App = () => {
 
   // Button Filter
   const handleClick = (e) => {
-    if (e.target.value === "All Products") {
-      return;
-    }
+    // if (e.target.value === "All Products") {
+    //   filter
+    // }
     
     setCategory(e.target.value);
   };
