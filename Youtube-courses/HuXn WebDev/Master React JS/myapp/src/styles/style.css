@@ -26,14 +26,6 @@ html, body {
 #root {
   width: 100%;
   height: 100%;
-
-  display: grid;
-  grid-template-areas: 
-  "nav header"
-  "nav main"
-  "nav footer";
-  grid-template-columns: 300px calc(100% - 300px);
-  grid-template-rows: 90px 100% 1fr;
 }
 
 :root {
@@ -50,7 +42,7 @@ fieldset {
 /* Header Settings */
 header {
   width: 100%;
-  height: 70px;
+  padding: 20px;
   border-bottom: 1px solid var(--lightGray2);
 
   display: flex;
@@ -87,6 +79,11 @@ header a {
 }
 
 /* Resets */
+.pageCont {
+  display: flex;
+  justify-content: space-between;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -103,6 +100,7 @@ del {
 
 /* Nav Settings */
 nav {
+  width: 300px;
   height: 100%;
   border-right: 1px solid var(--lightGray2);
 
@@ -113,8 +111,6 @@ nav {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
-
-  grid-row: 1 / span 4;
 }
 
 nav > div {
@@ -123,11 +119,6 @@ nav > div {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-}
-
-nav > div {
-  position: sticky;
-  top: 0;
 }
 
 .icon {
@@ -170,8 +161,10 @@ nav #allColors {
 }
 
 /* Main Settings */
-main {
-  grid-column: 2 / span 2;
+.mainCont {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .brands button {
@@ -205,7 +198,7 @@ main {
 .grid {
   padding: 30px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -230,6 +223,9 @@ main {
 
 /* Footer Settings */
 footer {
+  padding: 20px;
+  border-top: 1px solid var(--lightGray2);
+
   display: flex;
   justify-content: center;
   align-items: center;
