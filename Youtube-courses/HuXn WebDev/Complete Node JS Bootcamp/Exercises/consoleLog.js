@@ -1,0 +1,1 @@
+console.log("Starting Node JS Course");
