@@ -1,4 +1,3 @@
-// Here I write the code of the exercises to practice during my studies
 let money = true;
 
 if (money) {
