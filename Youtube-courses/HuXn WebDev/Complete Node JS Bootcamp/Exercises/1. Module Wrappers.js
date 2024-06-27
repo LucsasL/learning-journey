@@ -1,5 +1,3 @@
-// Here I write the code of the exercises to practice during my studies
-
 // Module Wrapper
 
 // Structure of a IIFE Function
@@ -9,5 +7,3 @@
 
 console.log(__filename);
 console.log(__dirname);
-
-// It's the code of the last exercise I did in the course
