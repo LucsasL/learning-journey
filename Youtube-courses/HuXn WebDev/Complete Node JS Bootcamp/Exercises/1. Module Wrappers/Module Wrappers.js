@@ -1,7 +1,7 @@
 // Module Wrapper
 
 // Structure of a IIFE Function
-// (function(exports, require, module, __filename__, __dirname) {
+// (function(exports, require, module, __filename, __dirname) {
 //   console.log("Hello from IIFE");
 // })();
 
