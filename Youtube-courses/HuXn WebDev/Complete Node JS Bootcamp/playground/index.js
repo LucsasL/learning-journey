@@ -3,9 +3,15 @@
 // FileSystem Module
 import * as fs from "fs/promises";
 
+// fs.readdir(pathString) Method
+
+// read the content of the folder
 try {
-  // const bruh = await fs.mkdir("c:\nodejs\courses/redux/toolkit", { recursive: true });
-  console.log("Folder created.");
+  const files = await fs.readdir("c:/nodejs");
+  for (const file of files) {
+    console.log(file);
+  }
+
 } catch (error) {
   console.log(error);
 }
