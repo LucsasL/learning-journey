@@ -5,7 +5,7 @@ import * as fs from "fs/promises";
 
 // It reads the content of a folder and returns an array
 try {
-  const files = await fs.readdir("c:/nodejs");
+  const files = await fs.readdir("c:/nodejs/courses");
   for (const file of files) {
     console.log(file);
   }
