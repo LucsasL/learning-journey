@@ -4,6 +4,7 @@ import http from "http";
 // Create a server
 const server = http.createServer((req, res) => {
   // console.log(req);
+  
   // res.setHeader("Content-type", "text/html");
   // res.statusCode = 404;
   // res.statusMessage = "BAD!";
