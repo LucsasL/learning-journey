@@ -1,15 +1,25 @@
 {
-  "name": "11.-npm",
+  "name": "lucsas",
   "version": "1.0.0",
+  "description": "The package you need.",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "github.com/@lucsasRepo"
+  },
+  "keywords": [
+    "awesome",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Lucsas",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.1.4"
   }
