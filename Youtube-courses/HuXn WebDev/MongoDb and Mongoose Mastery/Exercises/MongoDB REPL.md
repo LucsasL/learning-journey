@@ -33,3 +33,8 @@ Sorts the collection in alphabetical order. If the parameter is set as -1, it wi
 `db.collectionName.find({}, { name: 1 }).sort({ name: 1 }).skip(intNum)`
 
 It receives an integer number and returns the collections skiping the first *intNum* of documents, *intNum* being that number you specified in the method call.
+
+`db.collectionName.find({rating: { $gt: 5 }})`
+
+You can pass operators to filter the documents you want to show when executing the command.
+

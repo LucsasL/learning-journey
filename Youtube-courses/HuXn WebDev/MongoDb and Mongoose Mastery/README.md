@@ -36,7 +36,7 @@ The combination of all the documents make a collection. And gathering multiple c
 }
 ```
 
-### Key Points 🔑
+#### Key Points 🔑
 
 - A document is a set of key-value pairs that represent a **single record** within a collection.
 - A field is a specific **piece of data** within a document that holds a value.
