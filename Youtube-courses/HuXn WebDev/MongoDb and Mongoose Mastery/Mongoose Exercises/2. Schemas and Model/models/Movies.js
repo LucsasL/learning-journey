@@ -19,7 +19,7 @@ const moviesSchema = new mongoose.Schema({
 // Creating Model
 const MovieModel = mongoose.model("Movie", moviesSchema);
 
-const createDoc = async () => {
+const insertManyDocs = async () => {
   try {
     // Creating new document
     const m1 = new MovieModel({
@@ -30,7 +30,36 @@ const createDoc = async () => {
       isActive: true,
       comments: [{ value: "That was an amazing movie!" }],
     });
-    const result = await m1.save();
+
+    const m2 = new MovieModel({
+      name: "seila2",
+      ratings: 2,
+      money: 300000,
+      genre: ["Action", "Adventure"],
+      isActive: true,
+      comments: [{ value: "Mucho loko meu!" }],
+    });
+
+    const m3 = new MovieModel({
+      name: "Paia: As piscadas do além",
+      ratings: 4,
+      money: 50000000,
+      genre: ["Epic", "Action", "Adventure"],
+      isActive: true,
+      comments: [{ value: "Caramba! Ele mita demais." }],
+    });
+
+    const m4 = new MovieModel({
+      name: "Josoares, sua piranha.",
+      ratings: 5,
+      money: 10,
+      genre: ["Terror", "Impressive", "Art"],
+      isActive: true,
+      comments: [{ value: "Don't have words for this!" }],
+    });
+
+
+    const result = await MovieModel.insertMany([m2, m3, m4]);
 
     console.log(result);
 
@@ -39,4 +68,4 @@ const createDoc = async () => {
   }
 };
 
-export { createDoc };
+export { insertManyDocs };

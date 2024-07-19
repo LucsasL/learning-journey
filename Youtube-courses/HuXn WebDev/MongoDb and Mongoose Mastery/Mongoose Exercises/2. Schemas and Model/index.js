@@ -1,5 +1,5 @@
 import express from "express";
-import { createDoc } from "./models/Movies.js";
+import { insertManyDocs } from "./models/Movies.js";
 
 // Importing external functions
 import connectDB from "./db/connectDB.js";
@@ -12,6 +12,6 @@ const DATABASE_URL =
 
 connectDB(DATABASE_URL);
 
-createDoc();
+insertManyDocs();
 
 app.listen(port, () => console.log(`Server running at port ${port}`));
