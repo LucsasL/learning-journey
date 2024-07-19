@@ -12,4 +12,3 @@ const DATABASE_URL =
 connectDB(DATABASE_URL);
 
 app.listen(port, () => console.log(`Server running at port ${port}`));
-b
