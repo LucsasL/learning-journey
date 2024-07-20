@@ -58,7 +58,6 @@ const insertManyDocs = async () => {
       comments: [{ value: "Don't have words for this!" }],
     });
 
-
     const result = await MovieModel.insertMany([m2, m3, m4]);
 
     console.log(result);
