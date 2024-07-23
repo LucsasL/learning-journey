@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Settings */
+html, body {
+  background: #101010;
+  color: white;
+}
+
+/* Header Settings */
+header {
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+}
+
+header > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: inline-block;
+  display: flex;
+}
+
+.link {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Main Settings */
+.mainCont {
+  margin: 0px 25px;
+}
+
+h1 {
+  font: bold 2em Arial, sans-serif;
+  margin: 16px 0px;
+}
+
+h2 {
+  font: bold 1.4em Arial, sans-serif;
+  margin: 16px 0px;
+}
+
+h3 {
+  font: bold 1.2em Arial, sans-serif;
+  margin: 16px 0px;
+}
+
+section {
+  margin: 40px 0px;
+}
+
+p {
+  margin: 16px 0px;
+}
+
+.mainCont li {
+  margin: 10px 0px;
+}
+
+.mainCont a {
+  color: rgb(84, 84, 182);
+
+  font: normal 1.4em Arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Page */
+section.userProfile > div {
+  display: flex;
+}
+
+.userImg {
+  width: 200px;
+  height: 200px;
+  border: 5px solid blue;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInfo {
+  margin: 0px 40px;
+}
+
+.status {
+  background: #060606;
+  padding: 10px;
+  border: 3px solid #030303;
+  border-radius: 5px;
+}
+
+.markdown {
+  background: #060606;
+  padding: 20px;
+  border-radius: 10px;
+}
