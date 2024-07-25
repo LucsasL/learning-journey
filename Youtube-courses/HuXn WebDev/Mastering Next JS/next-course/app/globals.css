@@ -16,7 +16,7 @@ header {
   align-items: center;
 }
 
-ul {
+header ul {
   display: inline-block;
   display: flex;
 }
@@ -24,4 +24,10 @@ ul {
 .link {
   display: inline-block;
   margin: 10px;
+}
+
+.login-menu {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
 }

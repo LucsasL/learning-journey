@@ -13,8 +13,8 @@ function Navbar() {
             <Link href="/about" className="link">
               ABOUT
             </Link>
-            <Link href="/portfolio" className="link">
-              PORTFOLIO
+            <Link href="/login" className="link">
+              LOGIN
             </Link>
           </ul>
         </div>

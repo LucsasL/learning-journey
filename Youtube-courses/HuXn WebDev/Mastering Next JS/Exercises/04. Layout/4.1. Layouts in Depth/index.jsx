@@ -1,3 +1,7 @@
+// Layout
+
+// A layout is like a blueprint that helps you make all the pages of your website look the same. It's a way to put common things (e.g header, footer), and other stuff that appears on every page, in one place. This makes it easy to keep a similar look on all your web pages. So, a layout is a handly tool that lets you keep things tidy and consistent on your website.
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
