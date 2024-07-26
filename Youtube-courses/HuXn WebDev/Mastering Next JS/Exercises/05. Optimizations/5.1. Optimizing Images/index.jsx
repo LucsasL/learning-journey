@@ -1,5 +1,5 @@
 // Use the <Image /> Tag from Next.JS to optimize images
-import Image from "next";
+import Image from "next/image";
 
 import React from 'react';
 
