@@ -1,4 +1,4 @@
-// You can take fons from "Google Fonts" and import it to your project with Next JS
+// You can take fonts from "Google Fonts" and import it to your project with Next JS.
 
 // Fonts Import
 import { Roboto } from "next/font/google";
