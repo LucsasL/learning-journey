@@ -19,3 +19,11 @@
 // Job Opportunities: As Vue.js gains popularity, the demand for developers with Vue.js skills is increasing. Learning Vue.js can enhance your job prospects, especially if you're interested in working on modern web development projects.
 
 // Integration with Other Technologies: Vue.js can be easily integrated with other libraries and frameworks. For example, you can use Vue.js alongside VueX for state management or Vue Router for routing.
+
+// <script setup></script>
+// 
+// <template>
+//  <h1>Hello world</h1>
+// </template>
+// 
+// <style scope></style>
