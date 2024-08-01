@@ -38,35 +38,10 @@
 
 <!-- Components can be customized and configured with props, allowing for a high level of flexibility. This makes it easy to reuse components with different data or settings -->
 
-<!-- app.vue code -->
+<script setup></script>
 
-<script setup>
-import HelloWorld from './components/helloWorld.vue';
-</script>
-
-<template>
-  <HelloWorld />
-</template>
-
-<style scope>
-
-</style>
-
-<!-- helloworld.vue code -->
-
-<!-- JS -->
-<script setup>
-  console.log("Hello world!");
-</script>
-
-<!-- HTML -->
 <template>
   <h1>Hello world!</h1>
 </template>
 
-<!-- CSS -->
-<style>
-  h1 {
-    color: red;
-  }
-</style>
+<style scoped></style>
