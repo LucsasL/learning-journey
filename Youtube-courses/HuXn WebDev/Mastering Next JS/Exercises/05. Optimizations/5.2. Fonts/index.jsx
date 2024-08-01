@@ -2,7 +2,7 @@
 
 // Fonts Import
 import { Roboto } from "next/font/google";
-const roboto = new Roboto({ subsets: ["latin"], weight: "500" });
+const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
 function Home() {
   return (

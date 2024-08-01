@@ -1,5 +1,5 @@
 .box-1 {
-  background: rgb(56, 162, 248);
+  background: rgb(195, 196, 185);
   width: 100px;
   height: 100px;
   padding: 5px;
@@ -7,7 +7,7 @@
 }
 
 .box-2 {
-  background: rgb(123, 217, 17);
+  background: rgb(246, 158, 227);
   width: 200px;
   height: 100px;
   padding: 10px;
@@ -15,7 +15,7 @@
 }
 
 .box-3 {
-  background: rgb(188, 33, 228);
+  background: rgb(54, 253, 86);
   width: 300px;
   height: 100px;
   padding: 15px;
@@ -23,7 +23,7 @@
 }
 
 .box-4 {
-  background: rgb(125, 133, 112);
+  background: rgb(28, 11, 129);
   width: 400px;
   height: 100px;
   padding: 20px;
@@ -31,7 +31,7 @@
 }
 
 .box-5 {
-  background: rgb(164, 41, 46);
+  background: rgb(223, 215, 95);
   width: 500px;
   height: 100px;
   padding: 25px;
@@ -39,7 +39,7 @@
 }
 
 .box-6 {
-  background: rgb(86, 50, 109);
+  background: rgb(147, 57, 5);
   width: 600px;
   height: 100px;
   padding: 30px;
@@ -47,7 +47,7 @@
 }
 
 .box-7 {
-  background: rgb(105, 100, 103);
+  background: rgb(97, 130, 106);
   width: 700px;
   height: 100px;
   padding: 35px;
@@ -55,7 +55,7 @@
 }
 
 .box-8 {
-  background: rgb(59, 139, 78);
+  background: rgb(95, 103, 181);
   width: 800px;
   height: 100px;
   padding: 40px;
@@ -63,7 +63,7 @@
 }
 
 .box-9 {
-  background: rgb(61, 236, 40);
+  background: rgb(135, 26, 18);
   width: 900px;
   height: 100px;
   padding: 45px;
@@ -71,7 +71,7 @@
 }
 
 .box-10 {
-  background: rgb(84, 45, 134);
+  background: rgb(143, 205, 10);
   width: 1000px;
   height: 100px;
   padding: 50px;
