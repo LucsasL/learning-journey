@@ -9,20 +9,18 @@ import { useRouter } from "next/navigation";
 import { Roboto } from "next/font/google";
 const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
-function Home() {
+async function Home() {
   const router = useRouter();
-  const [product, setProduct] = useState([]);
+  
+  async function fetchData() {
+    let data = await fetch("https://jsonplaceholder.typicode.com/posts");
+    data = await data.json();
 
-  useEffect(() => {
-    async function fetchData() {
-      let data = await fetch("https://jsonplaceholder.typicode.com/posts");
-      data = await data.json();
-      setProduct(data);
-      console.log(data);
-    }
+    console.log(data);
+    return data;
+  }
 
-    fetchData();
-  }, []);
+  let products = await fetchData();
 
   const navigate = (page) => {
     router.push(page);
@@ -37,7 +35,7 @@ function Home() {
 
         <ul>
           {
-            product.map(p => {
+            products.map(p => {
               return <li key={p.id}>{p.title}</li>
             })
           }

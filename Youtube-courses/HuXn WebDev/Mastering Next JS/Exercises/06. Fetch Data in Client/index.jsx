@@ -1,5 +1,7 @@
 // Fetching data from the client
 
+// Use the useState and useEffect Hooks to take API data and transfer to the state of an application, and then render this in useEffect
+
 "use client";
 
 import React from 'react'
