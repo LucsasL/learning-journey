@@ -31,3 +31,7 @@ header ul {
   display: flex;
   justify-content: space-around;
 }
+
+input, button {
+  color: black;
+}
