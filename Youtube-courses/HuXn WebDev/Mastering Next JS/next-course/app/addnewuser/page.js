@@ -20,20 +20,22 @@ function AddNewUser() {
     }
   };
 
-  const AddNewUserHandler = () => {
-    console.log(user.name, user.age, user.email);
+  const AddNewUserHandler = async () => {
+    const data = await fetch("http://localhost:3001/api/users");
+    const { name, age, email } = data;
 
-    // if (!user.name || !user.age || !user.email) {
-    //   return NextResponse.json(
-    //     { error: "Bad Request, send all the data", ok: false },
-    //     { status: 400 }
-    //   );
-    // }
+    if (!name || !age || !email) {
+      return NextResponse.json(
+        { error: "Bad Request, send all the data", ok: false },
+        { status: 400 }
+      );
+    }
 
-    // return NextResponse.json(
-    //   { res: "User Registeres", ok: true },
-    //   { status: 201 }
-    // );
+    
+    return NextResponse.json(
+      { res: "User Registeres", ok: true },
+      { status: 201 }
+    );
   };
 
   return (
