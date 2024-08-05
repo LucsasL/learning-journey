@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServerDataFetch() {
+async function ServerDataFetch() {
   const fetchData = async () => {
     let data = await fetch("https://jsonplaceholder.typicode.com/users");
     data = await data.json();
@@ -9,7 +9,7 @@ function ServerDataFetch() {
     return data;
   };
 
-  let users = fetchData();
+  let users = await fetchData();
 
   return (
     <>
