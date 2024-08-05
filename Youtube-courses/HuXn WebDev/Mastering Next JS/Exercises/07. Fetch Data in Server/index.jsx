@@ -6,12 +6,12 @@ import React from 'react'
 
 function FetchDataServer() {
   async function fetchData() {
-  let data = await fetch("https://jsonplaceholder.typicode.com/posts");
-  data = await data.json();
+    let data = await fetch("https://jsonplaceholder.typicode.com/posts");
+    data = await data.json();
 
-  console.log(data);
-  return data;
-}
+    console.log(data);
+    return data;
+  }
 
   let products = fetchData();
 
