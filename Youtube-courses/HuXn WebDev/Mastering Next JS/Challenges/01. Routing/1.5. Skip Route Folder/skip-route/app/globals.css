@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+button {
+  background: blue;
+
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
