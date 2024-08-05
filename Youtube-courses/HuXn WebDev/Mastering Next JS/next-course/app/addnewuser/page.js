@@ -20,22 +20,20 @@ function AddNewUser() {
     }
   };
 
-  const AddNewUserHandler = async () => {
-    const data = await fetch("http://localhost:3001/api/users");
-    const { name, age, email } = data;
+  const AddNewUserHandler = async () => {k
+    let res = await fetch("api/users", {
+      method: "POST",
+      body: JSON.stringify({ ...user })
+    });
 
-    if (!name || !age || !email) {
-      return NextResponse.json(
-        { error: "Bad Request, send all the data", ok: false },
-        { status: 400 }
-      );
+    res = await res.json();
+
+    if (res.ok) {
+      alert("User Successfully Registered!");
+      return;
     }
 
-    
-    return NextResponse.json(
-      { res: "User Registeres", ok: true },
-      { status: 201 }
-    );
+    alert("An Error Occurred while creating new user!");
   };
 
   return (
