@@ -87,10 +87,3 @@ export async function PUT(req, res) {
     { status: 201 }
   );
 }
-
-// export async function DELETE(req, res) {
-//   const { id } = await req.json();
-
-//   // Deleting the user in the specified ID
-//   const updatedArray = users.
-// }

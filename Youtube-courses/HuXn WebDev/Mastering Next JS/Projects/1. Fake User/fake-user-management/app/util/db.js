@@ -35,16 +35,15 @@ export const users = [
     password: "tony123",
   },
   {
-    id: 6,
-    name: "Josoares sua Piranha",
-    age: 20,
-    email: "josoares@gmail.com",
-    password: "josoares123",
-  },
-  {
     id: 7,
     name: "Irineu Nusabi neeu",
     email: "irineu@gmail.com",
     password: "ifuckingddidit",
+  },
+  {
+    id: 6,
+    name: "Josoares sua Piranha",
+    email: "josoares@gmail.com",
+    password: "josoares123",
   },
 ];
