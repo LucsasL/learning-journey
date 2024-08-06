@@ -36,8 +36,61 @@ export async function POST(req, res) {
     "utf-8"
   );
 
+  // Returning that the user were registered
   return NextResponse.json(
     { result: "User registered Successfully!", ok: true },
     { status: 201 }
   );
 }
+
+// 5. Update the user
+export async function PUT(req, res) {
+  let { id, name, email, password } = await req.json();
+
+  // Find the user in the users array by ID
+  const userIndex = users.findIndex((u) => u.id === id);
+
+  if (userIndex === -1) {
+    return NextResponse.json(
+      { result: "User not found", ok: false },
+      { status: 404 }
+    );
+  }
+
+  if (name) {
+    users[userIndex].name = name;
+  }
+
+  if (email) {
+    users[userIndex].email = email;
+  }
+  if (password) {
+    users[userIndex].password = password;
+  }
+
+  // Extract just the user array from the updated data
+  const updatedArray = users;
+
+  // Convert the updated users array to a JSON string
+  const updatedData = JSON.stringify(updatedArray, null, 2);
+
+  // Write the upload users array to a JSON string
+  fs.writeFileSync(
+    "./app/util/db.js",
+    `export const users = ${updatedData}`,
+    "utf-8"
+  );
+
+  // Returning that the user were registered
+  return NextResponse.json(
+    { result: "User updated Successfully!", ok: true },
+    { status: 201 }
+  );
+}
+
+// export async function DELETE(req, res) {
+//   const { id } = await req.json();
+
+//   // Deleting the user in the specified ID
+//   const updatedArray = users.
+// }
