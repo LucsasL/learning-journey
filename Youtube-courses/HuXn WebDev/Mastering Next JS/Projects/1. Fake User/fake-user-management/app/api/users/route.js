@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { users } from "@/util/db";
+import { users } from "@/app/util/db";
 
 // 1. All users Data
 export function GET() {

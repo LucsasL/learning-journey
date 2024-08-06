@@ -1,5 +1,5 @@
+import { users } from "@/app/util/db";
 import { NextResponse } from "next/server";
-import { users } from "@/util/db";
 
 // 2. Get specific User
 export function GET(req, res) {
@@ -17,11 +17,10 @@ export async function POST(req, res) {
     name: uName,
     email: uEmail,
     password: uPassword,
-  } = users.find((u) => u.id === id);
+  } = users[id - 1];
 
   if (uName === name && uEmail === email && uPassword === password) {
-    return NextResponse.json({ result: "Data Successfully Sent." });
-    
+    return NextResponse.json({ result: "Logged in Successfully." });
   } else if (!name || !email || !password) {
     return NextResponse.json({ result: "Please fill all the input fields" });
   }
