@@ -6,7 +6,7 @@ import fs from "fs";
 export function GET(req, res) {
   const { id } = res.params;
 
-  return NextResponse.json({ id, ...users[id - 1] });
+  return NextResponse.json({ id, ...users[id - 1], ok: true });
 }
 
 // 3. Login
