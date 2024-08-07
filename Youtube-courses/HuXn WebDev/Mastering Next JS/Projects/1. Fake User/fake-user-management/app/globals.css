@@ -16,18 +16,72 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html, body {
+  background: #252525;
+  color: white;
+
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+
+  overflow-x: clip;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Header Settings */
+header {
+  height: 90px;
+  border-bottom: 2px solid white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Main Settings */
+main {
+  height: calc(100% - 90px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv {
+  width: 70%;
+}
+
+/* Forms */
+legend {
+  opacity: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  color: black;
+  
+  width: 50%;
+  padding: 6px 8px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button, input[type="submit"] {
+  background: blue;
+  padding: 10px 20px;
+  margin: 10px;
+
+  cursor: pointer;
 }
