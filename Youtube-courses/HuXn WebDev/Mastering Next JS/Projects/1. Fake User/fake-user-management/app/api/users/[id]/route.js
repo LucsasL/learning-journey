@@ -9,7 +9,7 @@ export function GET(req, res) {
   return NextResponse.json({ id, ...users[id - 1], ok: true });
 }
 
-// 3. Login
+// 3. Login, it uses the POST HTTP Method
 export async function POST(req, res) {
   let { name, email, password } = await req.json();
   const { id } = await res.params;
