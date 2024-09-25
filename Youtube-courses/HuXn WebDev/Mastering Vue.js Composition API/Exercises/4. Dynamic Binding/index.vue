@@ -1,3 +1,7 @@
+<!-- Dynamic Binding -->
+
+<!-- You can simplify your attributes even more using dynamic binding: by not specifing the attribute and putting an object with the exact same name as the properties you want to change   -->
+
 <!-- JS -->
 <script setup>
   const myGithub = "https://github.com/lucsasl";
