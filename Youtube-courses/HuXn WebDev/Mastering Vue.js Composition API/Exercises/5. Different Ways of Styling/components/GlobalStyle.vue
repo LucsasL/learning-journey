@@ -12,6 +12,8 @@
 </template>
 
 <!-- CSS, Global Style -->
+
+<!-- The global style it's already set when you use the style tag to determine the properties of the elements -->
 <style>
   body {
     background: #060606;

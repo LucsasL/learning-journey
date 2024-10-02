@@ -21,12 +21,10 @@
 
 <!-- HTML -->
 <template>
-  <!-- Old way -->
-  <a v-bind:href="myGithub" v-bind:rel="relText" target="_blank">Lucsas's Github</a> <br />
-  
-  <!-- New way -->
+  <!-- Non-Dynamic way -->
   <a :href="myGithub" :rel="relText" target="_blank">Lucsas's Github</a>
 
+  <!-- Dynamic Binding -->
   <img :="imageInfo" />
 </template>
 
