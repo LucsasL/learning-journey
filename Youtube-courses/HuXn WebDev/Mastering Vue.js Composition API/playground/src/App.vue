@@ -1,9 +1,9 @@
 <script setup>
-import myEvent from './components/myEvent.vue';
+import myReactiveComponent from './components/myReactiveComponent.vue';
 </script>
 
 <template>
-  <myEvent />
+  <myReactiveComponent />
 </template>
 
 <style>
