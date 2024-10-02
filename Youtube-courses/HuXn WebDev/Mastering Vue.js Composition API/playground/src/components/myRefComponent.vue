@@ -1,21 +1,10 @@
-<!-- ref() function -->
-
-<!-- ref() is used to create a reactive reference to a value. Unlike the reactive function, which is used for creating reactive objects, ref is specifically designed for creating reactive single values -->
-
-<!-- ✅ You can store any value you want ✅ -->
-
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref } from 'vue'
 
-let count = ref(0);
-let username = ref("");
-let users = ref(["Michael", "Jordan", "Irineu", "John"]);
-let userInfo = ref({
-  name: "Alex",
-  age: 20,
-  location: ["NYC", "IDK"],
-  isMarried: false,
-});
+let count = ref(0)
+let username = ref('')
+let users = ref(['Michael', 'Jordan', 'Irineu', 'John'])
+let userInfo = ref({ name: 'Alex', age: 20, location: ['NYC', 'IDK'], isMarried: false });
 let friends = reactive([ref("Jordan"), ref("Alex"), ref("Irineu")]);
 </script>
 
@@ -54,9 +43,7 @@ let friends = reactive([ref("Jordan"), ref("Alex"), ref("Irineu")]);
 
     <button @click="userInfo.name = 'irineu'">Change Name</button>
     <button @click="userInfo.age = 40">Change Age</button>
-    <button @click="userInfo.location = ['Earth', 'meh']">
-      Change location
-    </button>
+    <button @click="userInfo.location = ['Earth', 'meh']">Change location</button>
     <button @click="userInfo.isMarried = true">Change Status</button>
   </div>
 
