@@ -37,3 +37,15 @@ let people = ref(["Alex", "Jordan", "Irineu"])
 
   - Vue relies on keys to track the identify of elements, and using unique keys for each item ensures that Vue can accurately update the DOM based on changes in the list.
 -->
+
+<script setup>
+
+</script>
+
+<template>
+  
+</template>
+
+<style>
+
+</style>
