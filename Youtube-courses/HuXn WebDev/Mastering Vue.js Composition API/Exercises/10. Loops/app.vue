@@ -39,11 +39,14 @@ let people = ref(["Alex", "Jordan", "Irineu"])
 -->
 
 <script setup>
-
+import { ref } from "vue";
+const som = ref("S");
 </script>
 
 <template>
-  
+  <div>
+     
+  </div>
 </template>
 
 <style>
