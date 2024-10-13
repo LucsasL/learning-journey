@@ -1,3 +1,7 @@
+// Vector 3
+
+// Vector 3 describe every object that can be positioned in all 3 dimensions, this can be any mesh or camera
+
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
