@@ -17,6 +17,7 @@ cubeMesh.scale.setScalar(.5);
 const cubeMesh2 = new THREE.Mesh(cubeGeometry, cubeMaterial);
 cubeMesh2.position.x = 2;
 
+  const reachCanvas = useRef();
 const cubeMesh3 = new THREE.Mesh(cubeGeometry, cubeMaterial);
 cubeMesh3.position.x = -2;
 
