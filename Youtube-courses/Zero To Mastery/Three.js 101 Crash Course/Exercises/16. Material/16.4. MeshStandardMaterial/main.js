@@ -6,12 +6,10 @@ const scene = new THREE.Scene();
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const torusKnotGeometry = new THREE.TorusKnotGeometry(.5, .15, 100, 16);
-const material = new THREE.MeshPhysicalMaterial({
+const material = new THREE.MeshStandardMaterial({
   color: "green",
-  metalness: 0,
-  roughness: 1,
-  reflectivity: .5,
-  clearCoat: 1,
+  metalness: 1,
+  roughness: .5,
 });
 
 const cubeMesh = new THREE.Mesh(geometry, material);
