@@ -15,12 +15,35 @@ const cylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
 const planeGeometry = new THREE.PlaneGeometry(1, 1);
 
 // Initializing the textures
-const grassTexture = textureLoader.load("/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_albedo.png");
-grassTexture.repeat.set(100, 100);
+const grassAlbedo = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_albedo.png"
+);
+
+const grassAo = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_ao.png"
+);
+
+const grassHeight = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_height.png"
+);
+
+const grassMetalic = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_metalic.png"
+);
+
+const grassNormal = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_normal.png"
+);
+
+const grassRoughness = textureLoader.load(
+  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_roughness.png"
+);
 
 // Basic Material
 const material = new THREE.MeshBasicMaterial({
-  map: grassTexture,
+  map: grassAlbedo,
+  roughnessMap: grassRoughness,
+  metalnessMap: grassMetalic,
 });
 
 // Meshes
@@ -32,25 +55,19 @@ const sphere = new THREE.Mesh(sphereGeometry, material);
 sphere.position.set(0, 2, 0);
 
 const cylinder = new THREE.Mesh(cylinderGeometry, material);
-cylinder.position.set(2, 2, 0);
+cylinder.position.set(0, -2, 0);
 
 const plane = new THREE.Mesh(planeGeometry, material);
-plane.rotation.x = THREE.MathUtils.degToRad(90);
-plane.position.y = -1;
-plane.scale.set(1000, 1000);
-grassTexture.wrapS = THREE.RepeatWrapping;
-grassTexture.wrapT = THREE.RepeatWrapping;
-
-scene.add(plane);
+plane.position.set(-2, 0, 0);
 
 material.side = THREE.DoubleSide; // 2
 
 // Creating a group
 const group = new THREE.Group();
-// group.add(cubeMesh);
-// group.add(TorusKnot);
-// group.add(sphere, cylinder);
-// scene.add(group);
+group.add(cubeMesh);
+group.add(TorusKnot);
+group.add(sphere, cylinder, plane);
+scene.add(group);
 
 // Initializing a Camera
 const camera = new THREE.PerspectiveCamera(
@@ -88,6 +105,11 @@ window.addEventListener("resize", () => {
 
 // Creating a render loop
 const renderloop = () => {
+  group.children.forEach((c) => {
+    c.rotation.y += 0.01;
+    c.rotation.x -= 0.01;
+  });
+
   controls.update();
   renderer.render(scene, camera);
   window.requestAnimationFrame(renderloop);
