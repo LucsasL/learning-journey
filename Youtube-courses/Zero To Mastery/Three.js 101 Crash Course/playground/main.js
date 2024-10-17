@@ -9,10 +9,30 @@ const textureLoader = new THREE.TextureLoader();
 
 // Intiializing geometries
 const geometry = new THREE.BoxGeometry(1, 1, 1);
+const uv2Cube = new THREE.BufferAttribute(geometry.attributes.uv.array, 2);
+geometry.setAttribute("uv2", uv2Cube);
+
 const torusKnotGeometry = new THREE.TorusKnotGeometry(0.5, 0.15, 100, 16);
-const sphereGeometry = new THREE.SphereGeometry(.8, 32, 32);
+const uv2TorusKnot = new THREE.BufferAttribute(
+  torusKnotGeometry.attributes.uv.array,
+  2
+);
+torusKnotGeometry.setAttribute("uv2", uv2TorusKnot);
+
+const sphereGeometry = new THREE.SphereGeometry(0.8, 32, 32);
+const uv2Sphere = new THREE.BufferAttribute(sphereGeometry.attributes.uv.array, 2);
+sphereGeometry.setAttribute("uv2", uv2Sphere);
+
+
 const cylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
+const uv2Cylinder = new THREE.BufferAttribute(cylinderGeometry.attributes.uv.array, 2);
+cylinderGeometry.setAttribute("uv2", uv2Cylinder);
+
+
 const planeGeometry = new THREE.PlaneGeometry(1, 1);
+const uv2Plane = new THREE.BufferAttribute(planeGeometry.attributes.uv.array, 2);
+planeGeometry.setAttribute("uv2", uv2Plane);
+
 
 // Initializing the textures
 const grassAlbedo = textureLoader.load(
@@ -50,7 +70,10 @@ const material = new THREE.MeshStandardMaterial({
   displacementMap: grassHeight,
 });
 
-material.displacementScale = .1;
+material.displacementScale = 0.1;
+
+material.AoMap = grassAo;
+material.aoMapIntensity = .2;
 
 // Meshes
 const cubeMesh = new THREE.Mesh(geometry, material);
