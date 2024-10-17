@@ -1,121 +1,160 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-// Initializing a Scene
+// Main Variables
+const aspectRatio = window.innerWidth / window.innerHeight;
+const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
+
+// Creating a Scene
 const scene = new THREE.Scene();
 
-// Initializing the textures loader
+// Texture Loader
 const textureLoader = new THREE.TextureLoader();
 
-// Intiializing geometries
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const uv2Cube = new THREE.BufferAttribute(geometry.attributes.uv.array, 2);
-geometry.setAttribute("uv2", uv2Cube);
+// Geometries and Materials
+const sphereGeo = new THREE.SphereGeometry(1, 32, 32);
+const sphereUv = new THREE.BufferAttribute(sphereGeo.attributes.uv.array, 2);
+sphereGeo.setAttribute("uv2", sphereUv);
 
-const torusKnotGeometry = new THREE.TorusKnotGeometry(0.5, 0.15, 100, 16);
-const uv2TorusKnot = new THREE.BufferAttribute(
-  torusKnotGeometry.attributes.uv.array,
-  2
+// Grass Texture
+const grassTex = textureLoader.load(
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_albedo.png"
 );
-torusKnotGeometry.setAttribute("uv2", uv2TorusKnot);
-
-const sphereGeometry = new THREE.SphereGeometry(0.8, 32, 32);
-const uv2Sphere = new THREE.BufferAttribute(sphereGeometry.attributes.uv.array, 2);
-sphereGeometry.setAttribute("uv2", uv2Sphere);
-
-
-const cylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
-const uv2Cylinder = new THREE.BufferAttribute(cylinderGeometry.attributes.uv.array, 2);
-cylinderGeometry.setAttribute("uv2", uv2Cylinder);
-
-
-const planeGeometry = new THREE.PlaneGeometry(1, 1);
-const uv2Plane = new THREE.BufferAttribute(planeGeometry.attributes.uv.array, 2);
-planeGeometry.setAttribute("uv2", uv2Plane);
-
-
-// Initializing the textures
-const grassAlbedo = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_albedo.png"
-);
+grassTex.colorSpace = THREE.SRGBColorSpace;
 
 const grassAo = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_ao.png"
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_ao.png"
 );
 
 const grassHeight = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_height.png"
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_height.png"
 );
 
 const grassMetalic = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_metalic.png"
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_metalic.png"
 );
 
 const grassNormal = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_normal.png"
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_normal.png"
 );
 
 const grassRoughness = textureLoader.load(
-  "/textures/whispy-grass-meadow-bl/whispy-grass-meadow-bl/wispy-grass-meadow_roughness.png"
+  "textures/whispy-grass-meadow-bl/wispy-grass-meadow_roughness.png"
 );
 
-// Basic Material
-const material = new THREE.MeshStandardMaterial({
-  map: grassAlbedo,
+// Badlands Texture
+const badlandsTex = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_albedo.png"
+);
+badlandsTex.colorSpace = THREE.SRGBColorSpace;
+
+const badlandsAo = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_ao.png"
+);
+
+const badlandsHeight = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_height.png"
+);
+
+const badlandsMetalic = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_metalic.png"
+);
+
+const badlandsNormal = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_normal.png"
+);
+
+const badlandsRoughness = textureLoader.load(
+  "textures/badlands-boulders-bl/badlands-boulders_roughness.png"
+);
+
+// Metal Texture
+const metalTex = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_albedo.png"
+);
+metalTex.colorSpace = THREE.SRGBColorSpace;
+
+const metalAo = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_ao.png"
+);
+
+const metalHeight = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_height.png"
+);
+
+const metalMetalic = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_metalic.png"
+);
+
+const metalNormal = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_normal.png"
+);
+
+const metalRoughness = textureLoader.load(
+  "textures/space-cruiser-panels2-bl/space-cruiser-panels2_roughness.png"
+);
+
+// Grass Material
+const grassMat = new THREE.MeshStandardMaterial({
+  map: grassTex,
   roughnessMap: grassRoughness,
-  roughness: 1,
   metalnessMap: grassMetalic,
-  metalness: 1,
   normalMap: grassNormal,
   displacementMap: grassHeight,
+  displacementScale: 0.1,
 });
+grassMat.aoMap = grassAo;
 
-material.displacementScale = 0.1;
+// Badlands Material
+const badlandsMat = new THREE.MeshStandardMaterial({
+  map: badlandsTex,
+  roughnessMap: badlandsRoughness,
+  metalnessMap: badlandsMetalic,
+  normalMap: badlandsNormal,
+  displacementMap: badlandsHeight,
+  displacementScale: 0.1,
+});
+badlandsMat.aoMap = badlandsAo;
 
-material.AoMap = grassAo;
-material.aoMapIntensity = .2;
+// Metal Material
+const metalMat = new THREE.MeshStandardMaterial({
+  map: metalTex,
+  roughnessMap: metalRoughness,
+  metalnessMap: metalMetalic,
+  normalMap: metalNormal,
+  displacementMap: metalHeight,
+  displacementScale: 0.1,
+});
+metalMat.aoMap = metalAo;
 
-// Meshes
-const cubeMesh = new THREE.Mesh(geometry, material);
-const TorusKnot = new THREE.Mesh(torusKnotGeometry, material);
-TorusKnot.position.x = 2;
+// Initializing a Group
+const sphereGroup = new THREE.Group();
 
-const sphere = new THREE.Mesh(sphereGeometry, material);
-sphere.position.set(0, 2, 0);
+// Initializing the Meshes
+const grassSphere = new THREE.Mesh(sphereGeo, grassMat);
 
-const cylinder = new THREE.Mesh(cylinderGeometry, material);
-cylinder.position.set(0, -2, 0);
+const badlandsSphere = new THREE.Mesh(sphereGeo, badlandsMat);
+badlandsSphere.position.set(2.5, 0, 0);
 
-const plane = new THREE.Mesh(planeGeometry, material);
-plane.position.set(-2, 0, 0);
+const metalSphere = new THREE.Mesh(sphereGeo, metalMat);
+metalSphere.position.set(-2.5, 0, 0);
 
-material.side = THREE.DoubleSide; // 2
-
-// Creating a group
-const group = new THREE.Group();
-group.add(cubeMesh);
-group.add(TorusKnot);
-group.add(sphere, cylinder, plane);
-scene.add(group);
-
-// Initializing a Camera
-const camera = new THREE.PerspectiveCamera(
-  65,
-  window.innerWidth / window.innerHeight,
-  0.5,
-  2000
-);
-
-camera.position.z = 5;
-camera.position.y = 3;
+// Adding spheres to the group
+sphereGroup.add(grassSphere, badlandsSphere, metalSphere);
+scene.add(sphereGroup);
 
 // Initializing lights
-const light = new THREE.AmbientLight("white", 1);
+const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light);
 
 const pointLight = new THREE.PointLight(0xffffff, 200);
 pointLight.position.set(5, 5, 5);
 scene.add(pointLight);
+
+// Initializing a Camera
+const camera = new THREE.PerspectiveCamera(35, aspectRatio, .1, 10000);
+
+camera.position.set(0, 5, 10);
 
 // Initializing a Renderer
 const canvas = document.querySelector(".threejs");
@@ -125,16 +164,15 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-
-const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
 renderer.setPixelRatio(maxPixelRatio);
 
+// Applying controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 
-// Creating an event listener for resizing the screen
+// Resize Event Handler
 window.addEventListener("resize", () => {
-  console.log("Screen Resized!");
+  console.log("Screen resized!");
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -142,9 +180,8 @@ window.addEventListener("resize", () => {
 
 // Creating a render loop
 const renderloop = () => {
-  group.children.forEach((c) => {
+  sphereGroup.children.forEach((c) => {
     c.rotation.y += 0.01;
-    c.rotation.x -= 0.01;
   });
 
   controls.update();
