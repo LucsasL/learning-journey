@@ -10,7 +10,7 @@ const textureLoader = new THREE.TextureLoader();
 // Intiializing geometries
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const torusKnotGeometry = new THREE.TorusKnotGeometry(0.5, 0.15, 100, 16);
-const sphereGeometry = new THREE.SphereGeometry(0.8, 32, 32);
+const sphereGeometry = new THREE.SphereGeometry(.8, 32, 32);
 const cylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
 const planeGeometry = new THREE.PlaneGeometry(1, 1);
 
@@ -40,10 +40,13 @@ const grassRoughness = textureLoader.load(
 );
 
 // Basic Material
-const material = new THREE.MeshBasicMaterial({
+const material = new THREE.MeshStandardMaterial({
   map: grassAlbedo,
   roughnessMap: grassRoughness,
+  roughness: 1,
   metalnessMap: grassMetalic,
+  metalness: 1,
+  normalMap: grassNormal,
 });
 
 // Meshes
@@ -79,6 +82,14 @@ const camera = new THREE.PerspectiveCamera(
 
 camera.position.z = 5;
 camera.position.y = 3;
+
+// Initializing lights
+const light = new THREE.AmbientLight("white", 1);
+scene.add(light);
+
+const pointLight = new THREE.PointLight(0xffffff, 200);
+pointLight.position.set(5, 5, 5);
+scene.add(pointLight);
 
 // Initializing a Renderer
 const canvas = document.querySelector(".threejs");
