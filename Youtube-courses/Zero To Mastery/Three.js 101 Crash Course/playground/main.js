@@ -47,7 +47,10 @@ const material = new THREE.MeshStandardMaterial({
   metalnessMap: grassMetalic,
   metalness: 1,
   normalMap: grassNormal,
+  displacementMap: grassHeight,
 });
+
+material.displacementScale = .1;
 
 // Meshes
 const cubeMesh = new THREE.Mesh(geometry, material);
