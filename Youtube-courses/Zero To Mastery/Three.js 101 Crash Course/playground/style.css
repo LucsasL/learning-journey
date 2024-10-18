@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background: #060606;
-  
+
   width: 100vw;
   height: 100vh;
 
