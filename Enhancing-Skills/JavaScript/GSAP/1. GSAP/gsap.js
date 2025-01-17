@@ -1,3 +1,5 @@
+// This chapter aims to teach everything the gsap object has to offer, from basic properties and core concepts to internal plugins and methods that makes the GSAP library the way it is. As the documentation updates and new things get added, more things will be updated to these files for learning purposes (as the name refers).
+
 // Tweens
 
 // What's a tween in GSAP?
