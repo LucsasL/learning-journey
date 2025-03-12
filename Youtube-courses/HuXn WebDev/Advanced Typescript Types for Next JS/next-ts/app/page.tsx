@@ -1,9 +1,18 @@
-export default function Home() {
+import React from 'react';
+
+import User from './components/User';
+
+function Home() {
   return (
+    // Attaching Types to Props
     <>
-      <h1>
-        Hello
-      </h1>
+      <section>
+
+        {/* Using user component and passing props */}
+        <User name="Lucas" age={25} email="example@gmail.com" isStudent={true} />
+      </section>
     </>
-  );
+  )
 }
+
+export default Home;
