@@ -4,11 +4,12 @@ import User from './components/User';
 
 function Home() {
   return (
+    // Attaching Types to Props
     <>
       <section>
-        <User>
-          <p>This is a children</p>
-        </User>
+
+        {/* Using user component and passing props */}
+        <User name="Lucas" age={25} email="example@gmail.com" isStudent={true} />
       </section>
     </>
   )
