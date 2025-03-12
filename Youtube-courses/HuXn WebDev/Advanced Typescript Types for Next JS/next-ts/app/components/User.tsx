@@ -1,15 +1,19 @@
-// Telling the TypeScript compiler that "ReactNode" is a type
-import { type ReactNode } from "react";
+import React, { FC } from "react";
 
-// ReactNode Type
+// Functional Component (FC) Type
+type Shape = {
+  name: string,
+  age: number,
+}
 
-// A type that is a union of all the possible types that can be passed as children in JSX/TSX (DOM Elements, strings, etc...)
-type UserShape = { children: ReactNode };
-
-export function User({ children }: UserShape) {
+const User: FC<Shape> = ({ name, age }) => {
   return (
     <>
-      <main>{children}</main>
+      <main>
+        <h1>
+          {name}, {age}
+        </h1>
+      </main>
     </>
   );
 }

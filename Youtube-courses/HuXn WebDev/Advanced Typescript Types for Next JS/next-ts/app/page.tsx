@@ -1,4 +1,5 @@
 import React from 'react';
+import "./globals.css"
 
 import User from './components/User';
 
@@ -6,9 +7,7 @@ function Home() {
   return (
     <>
       <section>
-        <User>
-          <p>This is a children</p>
-        </User>
+        <User name="Huxn" age={20} />
       </section>
     </>
   )
