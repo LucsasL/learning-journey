@@ -1,7 +1,7 @@
 import React from 'react';
 import "./globals.css"
 
-import Counter from '@/components/Counter';
+import Counter from './components/Counter';
 
 function Home() {
   return (
