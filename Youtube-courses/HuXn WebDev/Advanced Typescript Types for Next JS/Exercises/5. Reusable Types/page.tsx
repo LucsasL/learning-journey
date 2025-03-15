@@ -1,7 +1,7 @@
-import React from 'react';
-import "./globals.css"
+import React from "react";
+import "./globals.css";
 
-import User from '@/components/User';
+import User from './components/User';
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
         <User name="Huxn" age={20} />
       </section>
     </>
-  )
+  );
 }
 
 export default Home;
