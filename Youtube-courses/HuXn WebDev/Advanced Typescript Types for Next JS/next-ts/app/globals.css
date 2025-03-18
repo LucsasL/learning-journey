@@ -4,3 +4,8 @@ html, body {
   background: #060606;
   color: white;
 }
+
+.formDiv {
+  padding: 5px;
+  margin: 10px 5px;
+}
