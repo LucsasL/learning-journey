@@ -19,7 +19,7 @@ const Forms = () => {
   const emailInp = useRef<HTMLInputElement>(null);
   const passwordInp = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     const nameValue = nameInp.current!.value;
     const emailValue = emailInp.current!.value;
