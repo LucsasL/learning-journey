@@ -1,16 +1,19 @@
+"use client";
+
 import React, { FC } from "react";
 import "./globals.css";
 
 // Button Component Imports
-import Button from "@/components/Button";
-import { primaryButtonProps, secondaryButtonProps } from "@/components/Button";
+import MyContextProvider from "@/context/MyContext";
+import MyComponent from "@/components/MyComponent";
 
 const Home: FC = () => {
   return (
     <>
       <main>
-        <Button {...primaryButtonProps} />
-        <Button {...secondaryButtonProps} />
+        <MyContextProvider>
+          <MyComponent />
+        </MyContextProvider>
       </main>
     </>
   );
